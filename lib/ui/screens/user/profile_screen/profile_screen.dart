@@ -22,7 +22,6 @@ part 'widgets/order_status_chip.dart';
 part 'widgets/orders_summary.dart';
 part 'widgets/summary_card.dart';
 
-
 class ProfileScreen extends ConsumerStatefulWidget {
   static const String routePath = '/$routeName';
   static const String routeName = 'profile';
@@ -104,8 +103,8 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
                         Text(
                           context.l10n.manageAndReviewOrders,
                           style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                            color: Theme.of(context).colorScheme.onSurfaceVariant,
-                          ),
+                                color: Theme.of(context).colorScheme.onSurfaceVariant,
+                              ),
                           textAlign: TextAlign.center,
                         ),
                       ],
@@ -114,12 +113,10 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
 
                   const SizedBox(height: Shapes.gutter),
 
-                  // Summary Cards
                   const _OrdersSummary(),
 
                   const SizedBox(height: Shapes.gutter2x),
 
-                  // Status Filter (solo visible cuando no está sticky)
                   AnimatedOpacity(
                     opacity: _showStickyFilter ? 0.0 : 1.0,
                     duration: const Duration(milliseconds: 200),
@@ -128,7 +125,6 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
 
                   const SizedBox(height: Shapes.gutter),
 
-                  // Error handling
                   if (profileState.error != null)
                     Container(
                       margin: const EdgeInsets.only(bottom: Shapes.gutter),
@@ -148,8 +144,8 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
                             child: Text(
                               profileState.error!,
                               style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                                color: Theme.of(context).colorScheme.error,
-                              ),
+                                    color: Theme.of(context).colorScheme.error,
+                                  ),
                             ),
                           ),
                           IconButton(
@@ -163,7 +159,6 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
                       ),
                     ),
 
-                  // Content
                   if (profileState.isLoading)
                     const Center(
                       child: Padding(
@@ -174,29 +169,22 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
                   else if (profileState.filteredOrders.isEmpty)
                     const _EmptyOrders()
                   else
-                  // Orders list
                     ...profileState.filteredOrders.map(
-                          (order) => Padding(
+                      (order) => Padding(
                         padding: const EdgeInsets.only(bottom: Shapes.gutter),
                         child: _OrderCard(
                           order: order,
                           onTap: () => _OrderDetailsSheet.show(context, order),
-                          onStatusChange: (newStatus) {
-                            profileNotifier.updateOrderStatus(order.id, newStatus);
-                          },
-                          onDelete: () => profileNotifier.deleteOrder(order.id),
                         ),
                       ),
                     ),
 
-                  // Bottom spacing
                   const SizedBox(height: Shapes.gutter4x),
                 ],
               ),
             ),
           ),
 
-          // Filtros fijos en la parte superior cuando se hace scroll
           AnimatedPositioned(
             duration: const Duration(milliseconds: 300),
             curve: Curves.easeInOut,

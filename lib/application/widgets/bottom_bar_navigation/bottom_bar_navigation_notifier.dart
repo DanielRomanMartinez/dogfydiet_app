@@ -1,4 +1,3 @@
-import 'package:dogfydiet_app/ui/screens/cart/cart_screen/cart_screen.dart';
 import 'package:dogfydiet_app/ui/screens/home/home_screen/home_screen.dart';
 import 'package:dogfydiet_app/ui/screens/preferences/preferences_screen/preferences_screen.dart';
 import 'package:dogfydiet_app/ui/screens/user/profile_screen/profile_screen.dart';
@@ -40,8 +39,6 @@ class BottomBarNavigationNotifier extends _$BottomBarNavigationNotifier {
       case 1:
         return ProfileScreen.routePath;
       case 2:
-        return CartScreen.routePath;
-      case 3:
         return PreferencesScreen.routePath;
       default:
         return HomeScreen.routePath;
@@ -54,10 +51,8 @@ class BottomBarNavigationNotifier extends _$BottomBarNavigationNotifier {
         return 0;
       case ProfileScreen.routePath:
         return 1;
-      case CartScreen.routePath:
-        return 2;
       case PreferencesScreen.routePath:
-        return 3;
+        return 2;
       default:
         return 0;
     }

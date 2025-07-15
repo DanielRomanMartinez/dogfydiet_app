@@ -300,4 +300,442 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get cancelled => 'Cancelled';
+
+  @override
+  String get sureYouWantToLeave => 'Are you sure you want to leave?';
+
+  @override
+  String get almostDoneDescription =>
+      'Your dog is very close to starting to enjoy their food like never before.';
+
+  @override
+  String get continueLater => 'Continue later';
+
+  @override
+  String get comeOnStay => 'Come on, I\'ll stay';
+
+  @override
+  String aboutToChangeLife(String petName) {
+    return 'You\'re about to change $petName\'s life';
+  }
+
+  @override
+  String specificNeedsDescription(String petName) {
+    return 'Due to $petName\'s specific needs, this is how their personalized plan looks.';
+  }
+
+  @override
+  String get yourDog => 'Your dog';
+
+  @override
+  String dailyAmount(String amount) {
+    return '$amount/day';
+  }
+
+  @override
+  String pricePerDay(String price) {
+    return 'Price: €$price/day';
+  }
+
+  @override
+  String packetsDescription(String packets) {
+    return '$packets packets, 1 packet/day';
+  }
+
+  @override
+  String get recommended => 'RECOMMENDED';
+
+  @override
+  String get hisPlan => 'Their plan: ';
+
+  @override
+  String get price => 'Price: ';
+
+  @override
+  String get perDay => '/day';
+
+  @override
+  String get trial14Days => '14-day trial';
+
+  @override
+  String discountLabel(int discount) {
+    return '-$discount% 🎉';
+  }
+
+  @override
+  String get observePositiveChanges =>
+      'Observe positive changes from the dietary change';
+
+  @override
+  String get noticeDigestionImprovements => 'Notice improvements in digestion';
+
+  @override
+  String get healthierShinerCoat => 'Show a healthier and shinier coat';
+
+  @override
+  String receiveMenuWherever(String petName) {
+    return 'Receive $petName\'s menu wherever you want';
+  }
+
+  @override
+  String get nextAvailableDate => 'Next available date';
+
+  @override
+  String get edit => 'Edit';
+
+  @override
+  String get deliveryData => 'Delivery details';
+
+  @override
+  String get name => 'Name';
+
+  @override
+  String get myNameIs => 'My name is...';
+
+  @override
+  String get mySurnameIs => 'My surname is...';
+
+  @override
+  String get fullAddress => 'Full address (e.g.: Finisterre Street, 5, 3rd)';
+
+  @override
+  String get myAddressIs => 'My address is...';
+
+  @override
+  String get locality => 'Locality / City';
+
+  @override
+  String get myLocalityIs => 'My locality is...';
+
+  @override
+  String get postalCode => 'Postal code';
+
+  @override
+  String get myPostalCodeIs => 'My postal code is...';
+
+  @override
+  String get country => 'Country';
+
+  @override
+  String get spain => 'Spain';
+
+  @override
+  String get paymentData => 'Payment details';
+
+  @override
+  String get finalizeDogfyDiet => 'Complete Dogfy Diet';
+
+  @override
+  String get card => 'Card';
+
+  @override
+  String get cardNumber => 'Card number';
+
+  @override
+  String get securityCode => 'Security code';
+
+  @override
+  String needsDaily(String petName, String amount) {
+    return '$petName needs $amount/day';
+  }
+
+  @override
+  String trialPeriodPrice(String price) {
+    return 'Once the trial period ends, your monthly plan price will be €$price/week';
+  }
+
+  @override
+  String get promoCodeQuestion => 'Do you have a promotional code?';
+
+  @override
+  String get orderContents => 'What your order contains';
+
+  @override
+  String get chickenMenu => 'Chicken menu';
+
+  @override
+  String get turkeyMenu => 'Turkey menu';
+
+  @override
+  String get salmonMenu => 'Salmon menu';
+
+  @override
+  String get beefMenu => 'Beef menu';
+
+  @override
+  String get welcomePack => 'Welcome pack';
+
+  @override
+  String get free => 'FREE';
+
+  @override
+  String get freeShipping => 'Free shipping';
+
+  @override
+  String get securePayment => 'Secure payment';
+
+  @override
+  String get flexibility => 'Flexibility';
+
+  @override
+  String activityLevelQuestion(String petName) {
+    return 'What is $petName\'s activity level? 🏃‍♀️';
+  }
+
+  @override
+  String get chooseActivityLevel =>
+      'Choose the activity level that best describes them.';
+
+  @override
+  String get selectOptionForDescription =>
+      'Select an option to see the description';
+
+  @override
+  String get lowActivityDescription =>
+      '🐕 Carpet dog: daily walks of less than 1h. What they love most is taking a good nap 😴 and staying very quiet.';
+
+  @override
+  String get mediumActivityDescription =>
+      '🐕 Zen dog: daily walks of 1 to 2h. Enjoys good walks, but also knows when to rest 😊';
+
+  @override
+  String get highActivityDescription =>
+      '🐕 Earthquake dog: daily walks of more than 2h. What a whirlwind of energy! 💪';
+
+  @override
+  String silhouetteQuestion(String petName) {
+    return 'Which silhouette best represents $petName?';
+  }
+
+  @override
+  String get selectSimilarFigure =>
+      'Select the figure that most resembles their weight and shape 🐕';
+
+  @override
+  String weightDescription(String petName) {
+    return 'The weight of $petName is approximately';
+  }
+
+  @override
+  String get kg => 'kg';
+
+  @override
+  String get whyImportant => 'Why is it important? 🤔';
+
+  @override
+  String get thinSilhouetteDescription =>
+      'Perfect figure: The waist is visible and ribs are easy to feel.';
+
+  @override
+  String get normalSilhouetteDescription =>
+      'At ideal weight: Looks proportioned and healthy.';
+
+  @override
+  String get overweightSilhouetteDescription =>
+      'A bit chubby: Some overweight is noticeable, but nothing serious.';
+
+  @override
+  String birthDateQuestion(String petName) {
+    return 'When was $petName born?';
+  }
+
+  @override
+  String get calorieNeedsVaryByAge =>
+      'Caloric needs vary according to your dog\'s age, but we will adapt perfectly to their life stage 😊';
+
+  @override
+  String get january => 'January';
+
+  @override
+  String get february => 'February';
+
+  @override
+  String get march => 'March';
+
+  @override
+  String get april => 'April';
+
+  @override
+  String get may => 'May';
+
+  @override
+  String get june => 'June';
+
+  @override
+  String get july => 'July';
+
+  @override
+  String get august => 'August';
+
+  @override
+  String get september => 'September';
+
+  @override
+  String get october => 'October';
+
+  @override
+  String get november => 'November';
+
+  @override
+  String get december => 'December';
+
+  @override
+  String get breedQuestion => 'What breed is your little one?';
+
+  @override
+  String get searchBreedPlaceholder => 'Search or write their breed 🐶';
+
+  @override
+  String get foodCriticQuestion =>
+      'What kind of food critic is your dog? 🍽️ 🐕';
+
+  @override
+  String chooseFoodOption(String petName) {
+    return 'Choose the option that best describes $petName';
+  }
+
+  @override
+  String get selective => 'Selective';
+
+  @override
+  String get gourmet => 'Gourmet';
+
+  @override
+  String get eatsEverything => 'Eats everything';
+
+  @override
+  String get selectiveDescription =>
+      'The selective one: very demanding with food, only eats what they really like 🤔';
+
+  @override
+  String get gourmetDescription =>
+      'The gourmet: loves trying new flavors, but doesn\'t settle for just anything 🤤';
+
+  @override
+  String get eatsEverythingDescription =>
+      'Eats everything: no food can resist them, always ready to try 😋';
+
+  @override
+  String healthConditionsQuestion(String petName) {
+    return 'Does $petName have any pathology?';
+  }
+
+  @override
+  String get yes => 'Yes';
+
+  @override
+  String get no => 'No';
+
+  @override
+  String get selectedPathologies => 'Selected pathologies:';
+
+  @override
+  String get everyDogIsAWorld => 'Every dog is a world 🌍';
+
+  @override
+  String get dontWorryAdaptMenu =>
+      'Don\'t worry! 🧡 We will adapt our menu to their case, whenever possible. If your dog\'s pathology doesn\'t appear in the form, send an email to nutritionists@dogfydiet.com.';
+
+  @override
+  String get selectPathology => 'Select a pathology';
+
+  @override
+  String get allergiesIntolerances => 'Allergies and food intolerances';
+
+  @override
+  String get sensitiveDigestion => 'Sensitive digestion';
+
+  @override
+  String get skinProblems => 'Skin problems';
+
+  @override
+  String get jointProblems => 'Joint problems';
+
+  @override
+  String get dentalProblems => 'Dental problems';
+
+  @override
+  String get diabetes => 'Diabetes';
+
+  @override
+  String get kidneyProblems => 'Kidney problems';
+
+  @override
+  String get heartProblems => 'Heart problems';
+
+  @override
+  String get overweight => 'Overweight';
+
+  @override
+  String get underweight => 'Underweight';
+
+  @override
+  String specialMenuAlmostReady(String petName) {
+    return 'The special menu for $petName is almost ready!';
+  }
+
+  @override
+  String get acceptTermsMessage =>
+      'By continuing, your progress will be saved and you will be accepting the terms and conditions and privacy policy to receive the best nutrition recommendations. 🧡';
+
+  @override
+  String wantToKnowPet(String petName) {
+    return 'We want to know $petName!';
+  }
+
+  @override
+  String get male => 'Male';
+
+  @override
+  String get female => 'Female';
+
+  @override
+  String get isNeutered => 'Is neutered?';
+
+  @override
+  String isPregnantOrLactating(String petName) {
+    return 'Is $petName pregnant or lactating?';
+  }
+
+  @override
+  String get yourFemale => 'Your female';
+
+  @override
+  String get afterNeuteringAdjustments =>
+      'After neutering, ration adjustments are required, as the dog usually has lower caloric expenditure.';
+
+  @override
+  String petNameQuestion(String breed) {
+    return 'What is your $breed called?';
+  }
+
+  @override
+  String get dog => 'dog';
+
+  @override
+  String get myDogIsCalled => 'My dog is called...';
+
+  @override
+  String excitementImproveLife(String breed) {
+    return 'How exciting! 🥳 You\'re about to improve your $breed\'s life through 100% natural nutrition.';
+  }
+
+  @override
+  String puppyExclamation(String petName) {
+    return '$petName is a puppy! 🥰';
+  }
+
+  @override
+  String get importantKnowCurrentWeight =>
+      'It\'s important to know their current weight to calculate their ideal portion.';
+
+  @override
+  String get knowPuppyWeightFundamental =>
+      'Knowing your puppy\'s weight is fundamental to adapt the feeding plan to their development stage.';
+
+  @override
+  String get back => 'Back';
+
+  @override
+  String get continueButton => 'Continue';
 }

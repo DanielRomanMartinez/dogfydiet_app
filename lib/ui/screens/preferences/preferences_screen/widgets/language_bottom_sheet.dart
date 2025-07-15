@@ -47,7 +47,7 @@ class _LanguageBottomSheet extends ConsumerWidget {
                 ),
                 const Spacer(),
                 IconButton(
-                  onPressed: () => Navigator.pop(context),
+                  onPressed: () => context.pop(),
                   icon: const Icon(Icons.close),
                 ),
               ],
@@ -81,7 +81,7 @@ class _LanguageBottomSheet extends ConsumerWidget {
                       : null,
                   onTap: () {
                     preferencesNotifier.changeLanguage(language.code);
-                    Navigator.pop(context);
+                    context.pop();
                   },
                 );
               },

@@ -7,7 +7,7 @@ part of 'profile_screen_notifier.dart';
 // **************************************************************************
 
 String _$profileScreenNotifierHash() =>
-    r'355486601380f25c245dd6fd06864caea5ed8abd';
+    r'19d9607beaf3c162f4502488723719ddc01de65c';
 
 /// See also [ProfileScreenNotifier].
 @ProviderFor(ProfileScreenNotifier)

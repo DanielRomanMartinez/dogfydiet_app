@@ -19,7 +19,6 @@ class PreferencesNotifier extends _$PreferencesNotifier {
       themeMode: ThemeMode.light,
     );
 
-    // Load initial state asynchronously
     _loadInitialState();
 
     return initialState;

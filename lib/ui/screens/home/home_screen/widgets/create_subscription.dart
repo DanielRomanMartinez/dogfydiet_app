@@ -1,10 +1,12 @@
 part of '../home_screen.dart';
 
-class _CreateSubscription extends StatelessWidget {
+class _CreateSubscription extends ConsumerWidget {
   const _CreateSubscription();
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
+    final selectedBreed = ref.watch(homeScreenNotifierProvider);
+
     return Container(
       margin: const EdgeInsets.all(Shapes.gutter),
       decoration: BoxDecoration(
@@ -38,13 +40,22 @@ class _CreateSubscription extends StatelessWidget {
               ),
             ),
             const SizedBox(height: Shapes.gutter2x),
-            const _BreedSelector(),
+            BreedSelector(
+              selectedBreed: selectedBreed,
+              onBreedSelected: (DogBreed breed) {
+                ref.read(homeScreenNotifierProvider.notifier).selectBreed(breed);
+              },
+            ),
             const SizedBox(height: Shapes.gutter),
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
                 onPressed: () {
-                  debugPrint('Navegar a crear menú/suscripción');
+                  if (selectedBreed != null) {
+                    _navigateWithBreed(context, ref, selectedBreed);
+                  } else {
+                    context.go(CreateSubscriptionScreen.routePath);
+                  }
                 },
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Theme.of(context).colorScheme.surface,
@@ -82,5 +93,14 @@ class _CreateSubscription extends StatelessWidget {
         ),
       ),
     );
+  }
+
+  void _navigateWithBreed(BuildContext context, WidgetRef ref, DogBreed breed) async {
+    final notifier = ref.read(createSubscriptionScreenNotifierProvider.notifier);
+
+    notifier.updateBreed(breed);
+    notifier.goToStep(1);
+
+    context.go(CreateSubscriptionScreen.routePath);
   }
 }

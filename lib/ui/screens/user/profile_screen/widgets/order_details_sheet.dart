@@ -51,7 +51,7 @@ class _OrderDetailsSheet extends StatelessWidget {
                     ),
                     const Spacer(),
                     IconButton(
-                      onPressed: () => Navigator.pop(context),
+                      onPressed: () => context.pop(),
                       icon: const Icon(Icons.close),
                     ),
                   ],

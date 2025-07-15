@@ -6,7 +6,7 @@ part of 'providers.dart';
 // RiverpodGenerator
 // **************************************************************************
 
-String _$routerServiceHash() => r'c8fd06f31122566a470d37cd387c479a4993da54';
+String _$routerServiceHash() => r'bb5d3d338fe67339359a90c78568ed21b5bf2e6f';
 
 /// See also [routerService].
 @ProviderFor(routerService)
@@ -78,6 +78,42 @@ final orderServiceProvider = AutoDisposeProvider<OrderService>.internal(
 @Deprecated('Will be removed in 3.0. Use Ref instead')
 // ignore: unused_element
 typedef OrderServiceRef = AutoDisposeProviderRef<OrderService>;
+String _$dogBreedServiceHash() => r'218be802099474bd8c031a38421df3e71c231f01';
+
+/// See also [dogBreedService].
+@ProviderFor(dogBreedService)
+final dogBreedServiceProvider = AutoDisposeProvider<DogBreedService>.internal(
+  dogBreedService,
+  name: r'dogBreedServiceProvider',
+  debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
+      ? null
+      : _$dogBreedServiceHash,
+  dependencies: null,
+  allTransitiveDependencies: null,
+);
+
+@Deprecated('Will be removed in 3.0. Use Ref instead')
+// ignore: unused_element
+typedef DogBreedServiceRef = AutoDisposeProviderRef<DogBreedService>;
+String _$subscriptionServiceHash() =>
+    r'a0c7ac0c7aeef1599495958f2a9e163987e193f4';
+
+/// See also [subscriptionService].
+@ProviderFor(subscriptionService)
+final subscriptionServiceProvider =
+    AutoDisposeProvider<SubscriptionService>.internal(
+  subscriptionService,
+  name: r'subscriptionServiceProvider',
+  debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
+      ? null
+      : _$subscriptionServiceHash,
+  dependencies: null,
+  allTransitiveDependencies: null,
+);
+
+@Deprecated('Will be removed in 3.0. Use Ref instead')
+// ignore: unused_element
+typedef SubscriptionServiceRef = AutoDisposeProviderRef<SubscriptionService>;
 String _$startUpServiceHash() => r'2d8cf4cfbd9a6b3ea278c2dfe7fa234aecb86f0c';
 
 /// See also [startUpService].

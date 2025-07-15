@@ -1,4 +1,3 @@
-import 'package:dogfydiet_app/config/routes/cart_routes.dart';
 import 'package:dogfydiet_app/config/routes/home_routes.dart';
 import 'package:dogfydiet_app/config/routes/preferences_routes.dart';
 import 'package:dogfydiet_app/config/routes/user_routes.dart';
@@ -20,7 +19,6 @@ final GoRouter router = GoRouter(
         return const SplashScreen();
       },
       routes: <RouteBase>[
-        ...cartRoutes,
         ...homeRoutes,
         ...preferencesRoutes,
         ...splashRoutes,

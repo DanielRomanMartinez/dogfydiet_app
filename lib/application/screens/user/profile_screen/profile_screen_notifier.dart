@@ -38,7 +38,7 @@ class ProfileScreenNotifier extends _$ProfileScreenNotifier {
       state = state.copyWith(
         isLoading: false,
         error: 'Error al cargar los pedidos: $e',
-      );
+      ); // TODO: Crashlytics
     }
   }
 
@@ -51,34 +51,7 @@ class ProfileScreenNotifier extends _$ProfileScreenNotifier {
   }
 
   void clearStatusFilter() {
-    // CORREGIDO: Usar copyWith con clearSelectedFilter
     state = state.copyWith(clearSelectedFilter: true);
-  }
-
-  Future<void> deleteOrder(String orderId) async {
-    try {
-      final orderService = ref.read(orderServiceProvider);
-      await orderService.deleteOrder(orderId);
-      await loadOrders(); // Refresh the list
-    } catch (e) {
-      state = state.copyWith(
-        error: 'Error al eliminar el pedido: $e',
-      );
-    }
-  }
-
-  Future<void> updateOrderStatus(String orderId, OrderStatus newStatus) async {
-    try {
-      final orderService = ref.read(orderServiceProvider);
-      final order = state.orders.firstWhere((o) => o.id == orderId);
-      final updatedOrder = order.copyWith(status: newStatus);
-      await orderService.updateOrder(updatedOrder);
-      await loadOrders(); // Refresh the list
-    } catch (e) {
-      state = state.copyWith(
-        error: 'Error al actualizar el pedido: $e',
-      );
-    }
   }
 
   void clearError() {
@@ -112,13 +85,12 @@ class ProfileScreenState extends Equatable {
     return ProfileScreenState(
       orders: orders ?? this.orders,
       isLoading: isLoading ?? this.isLoading,
-      error: error, // CORREGIDO: No usar ?? para error, permitir null explícito
+      error: error,
       selectedStatusFilter: clearSelectedFilter ? null : (selectedStatusFilter ?? this.selectedStatusFilter),
       clearFilter: clearFilter ?? false,
     );
   }
 
-  // Helper methods
   List<Order> get filteredOrders {
     if (selectedStatusFilter == null) {
       return orders;

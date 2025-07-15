@@ -1,5 +1,4 @@
-import 'package:dogfydiet_app/application/widgets/bottom_bar_navigation_notifier.dart';
-import 'package:dogfydiet_app/ui/screens/cart/cart_screen/cart_screen.dart';
+import 'package:dogfydiet_app/application/widgets/bottom_bar_navigation/bottom_bar_navigation_notifier.dart';
 import 'package:dogfydiet_app/ui/screens/home/home_screen/home_screen.dart';
 import 'package:dogfydiet_app/ui/screens/preferences/preferences_screen/preferences_screen.dart';
 import 'package:dogfydiet_app/ui/screens/user/profile_screen/profile_screen.dart';
@@ -26,7 +25,6 @@ class _AppLayoutState extends ConsumerState<AppLayout> {
   @override
   void initState() {
     super.initState();
-    // Actualizar el estado del notifier basado en la ruta actual
     WidgetsBinding.instance.addPostFrameCallback((_) {
       _updateNavigationState();
     });
@@ -48,43 +46,9 @@ class _AppLayoutState extends ConsumerState<AppLayout> {
         context.go(ProfileScreen.routePath);
         break;
       case 2:
-        context.go(CartScreen.routePath);
-        break;
-      case 3:
         context.go(PreferencesScreen.routePath);
         break;
     }
-  }
-
-  Widget _buildCartIcon() {
-    return Stack(
-      clipBehavior: Clip.none,
-      children: [
-        const Icon(Icons.shopping_cart_outlined),
-        Positioned(
-          right: -12,
-          top: -12,
-          child: Container(
-            width: 20,
-            height: 20,
-            decoration: BoxDecoration(
-              color: Theme.of(context).colorScheme.error,
-              shape: BoxShape.circle,
-            ),
-            child: Center(
-              child: Text(
-                '0',
-                style: TextStyle(
-                  color: Theme.of(context).colorScheme.onError,
-                  fontSize: 10,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-            ),
-          ),
-        ),
-      ],
-    );
   }
 
   @override
@@ -117,20 +81,16 @@ class _AppLayoutState extends ConsumerState<AppLayout> {
           unselectedItemColor: Theme.of(context).colorScheme.onSurfaceVariant,
           backgroundColor: Theme.of(context).colorScheme.surface,
           elevation: 8,
-          items: [
-            const BottomNavigationBarItem(
+          items: const [
+            BottomNavigationBarItem(
               icon: Icon(Icons.home_outlined),
               label: 'Home',
             ),
-            const BottomNavigationBarItem(
+            BottomNavigationBarItem(
               icon: Icon(Icons.person_outline),
               label: 'Profile',
             ),
             BottomNavigationBarItem(
-              icon: _buildCartIcon(),
-              label: 'Cart',
-            ),
-            const BottomNavigationBarItem(
               icon: Icon(Icons.menu),
               label: 'Preferences',
             ),

@@ -653,6 +653,756 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Cancelled'**
   String get cancelled;
+
+  /// No description provided for @sureYouWantToLeave.
+  ///
+  /// In en, this message translates to:
+  /// **'Are you sure you want to leave?'**
+  String get sureYouWantToLeave;
+
+  /// No description provided for @almostDoneDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Your dog is very close to starting to enjoy their food like never before.'**
+  String get almostDoneDescription;
+
+  /// No description provided for @continueLater.
+  ///
+  /// In en, this message translates to:
+  /// **'Continue later'**
+  String get continueLater;
+
+  /// No description provided for @comeOnStay.
+  ///
+  /// In en, this message translates to:
+  /// **'Come on, I\'ll stay'**
+  String get comeOnStay;
+
+  /// No description provided for @aboutToChangeLife.
+  ///
+  /// In en, this message translates to:
+  /// **'You\'re about to change {petName}\'s life'**
+  String aboutToChangeLife(String petName);
+
+  /// No description provided for @specificNeedsDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Due to {petName}\'s specific needs, this is how their personalized plan looks.'**
+  String specificNeedsDescription(String petName);
+
+  /// No description provided for @yourDog.
+  ///
+  /// In en, this message translates to:
+  /// **'Your dog'**
+  String get yourDog;
+
+  /// No description provided for @dailyAmount.
+  ///
+  /// In en, this message translates to:
+  /// **'{amount}/day'**
+  String dailyAmount(String amount);
+
+  /// No description provided for @pricePerDay.
+  ///
+  /// In en, this message translates to:
+  /// **'Price: €{price}/day'**
+  String pricePerDay(String price);
+
+  /// No description provided for @packetsDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'{packets} packets, 1 packet/day'**
+  String packetsDescription(String packets);
+
+  /// No description provided for @recommended.
+  ///
+  /// In en, this message translates to:
+  /// **'RECOMMENDED'**
+  String get recommended;
+
+  /// No description provided for @hisPlan.
+  ///
+  /// In en, this message translates to:
+  /// **'Their plan: '**
+  String get hisPlan;
+
+  /// No description provided for @price.
+  ///
+  /// In en, this message translates to:
+  /// **'Price: '**
+  String get price;
+
+  /// No description provided for @perDay.
+  ///
+  /// In en, this message translates to:
+  /// **'/day'**
+  String get perDay;
+
+  /// No description provided for @trial14Days.
+  ///
+  /// In en, this message translates to:
+  /// **'14-day trial'**
+  String get trial14Days;
+
+  /// No description provided for @discountLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'-{discount}% 🎉'**
+  String discountLabel(int discount);
+
+  /// No description provided for @observePositiveChanges.
+  ///
+  /// In en, this message translates to:
+  /// **'Observe positive changes from the dietary change'**
+  String get observePositiveChanges;
+
+  /// No description provided for @noticeDigestionImprovements.
+  ///
+  /// In en, this message translates to:
+  /// **'Notice improvements in digestion'**
+  String get noticeDigestionImprovements;
+
+  /// No description provided for @healthierShinerCoat.
+  ///
+  /// In en, this message translates to:
+  /// **'Show a healthier and shinier coat'**
+  String get healthierShinerCoat;
+
+  /// No description provided for @receiveMenuWherever.
+  ///
+  /// In en, this message translates to:
+  /// **'Receive {petName}\'s menu wherever you want'**
+  String receiveMenuWherever(String petName);
+
+  /// No description provided for @nextAvailableDate.
+  ///
+  /// In en, this message translates to:
+  /// **'Next available date'**
+  String get nextAvailableDate;
+
+  /// No description provided for @edit.
+  ///
+  /// In en, this message translates to:
+  /// **'Edit'**
+  String get edit;
+
+  /// No description provided for @deliveryData.
+  ///
+  /// In en, this message translates to:
+  /// **'Delivery details'**
+  String get deliveryData;
+
+  /// No description provided for @name.
+  ///
+  /// In en, this message translates to:
+  /// **'Name'**
+  String get name;
+
+  /// No description provided for @myNameIs.
+  ///
+  /// In en, this message translates to:
+  /// **'My name is...'**
+  String get myNameIs;
+
+  /// No description provided for @mySurnameIs.
+  ///
+  /// In en, this message translates to:
+  /// **'My surname is...'**
+  String get mySurnameIs;
+
+  /// No description provided for @fullAddress.
+  ///
+  /// In en, this message translates to:
+  /// **'Full address (e.g.: Finisterre Street, 5, 3rd)'**
+  String get fullAddress;
+
+  /// No description provided for @myAddressIs.
+  ///
+  /// In en, this message translates to:
+  /// **'My address is...'**
+  String get myAddressIs;
+
+  /// No description provided for @locality.
+  ///
+  /// In en, this message translates to:
+  /// **'Locality / City'**
+  String get locality;
+
+  /// No description provided for @myLocalityIs.
+  ///
+  /// In en, this message translates to:
+  /// **'My locality is...'**
+  String get myLocalityIs;
+
+  /// No description provided for @postalCode.
+  ///
+  /// In en, this message translates to:
+  /// **'Postal code'**
+  String get postalCode;
+
+  /// No description provided for @myPostalCodeIs.
+  ///
+  /// In en, this message translates to:
+  /// **'My postal code is...'**
+  String get myPostalCodeIs;
+
+  /// No description provided for @country.
+  ///
+  /// In en, this message translates to:
+  /// **'Country'**
+  String get country;
+
+  /// No description provided for @spain.
+  ///
+  /// In en, this message translates to:
+  /// **'Spain'**
+  String get spain;
+
+  /// No description provided for @paymentData.
+  ///
+  /// In en, this message translates to:
+  /// **'Payment details'**
+  String get paymentData;
+
+  /// No description provided for @finalizeDogfyDiet.
+  ///
+  /// In en, this message translates to:
+  /// **'Complete Dogfy Diet'**
+  String get finalizeDogfyDiet;
+
+  /// No description provided for @card.
+  ///
+  /// In en, this message translates to:
+  /// **'Card'**
+  String get card;
+
+  /// No description provided for @cardNumber.
+  ///
+  /// In en, this message translates to:
+  /// **'Card number'**
+  String get cardNumber;
+
+  /// No description provided for @securityCode.
+  ///
+  /// In en, this message translates to:
+  /// **'Security code'**
+  String get securityCode;
+
+  /// No description provided for @needsDaily.
+  ///
+  /// In en, this message translates to:
+  /// **'{petName} needs {amount}/day'**
+  String needsDaily(String petName, String amount);
+
+  /// No description provided for @trialPeriodPrice.
+  ///
+  /// In en, this message translates to:
+  /// **'Once the trial period ends, your monthly plan price will be €{price}/week'**
+  String trialPeriodPrice(String price);
+
+  /// No description provided for @promoCodeQuestion.
+  ///
+  /// In en, this message translates to:
+  /// **'Do you have a promotional code?'**
+  String get promoCodeQuestion;
+
+  /// No description provided for @orderContents.
+  ///
+  /// In en, this message translates to:
+  /// **'What your order contains'**
+  String get orderContents;
+
+  /// No description provided for @chickenMenu.
+  ///
+  /// In en, this message translates to:
+  /// **'Chicken menu'**
+  String get chickenMenu;
+
+  /// No description provided for @turkeyMenu.
+  ///
+  /// In en, this message translates to:
+  /// **'Turkey menu'**
+  String get turkeyMenu;
+
+  /// No description provided for @salmonMenu.
+  ///
+  /// In en, this message translates to:
+  /// **'Salmon menu'**
+  String get salmonMenu;
+
+  /// No description provided for @beefMenu.
+  ///
+  /// In en, this message translates to:
+  /// **'Beef menu'**
+  String get beefMenu;
+
+  /// No description provided for @welcomePack.
+  ///
+  /// In en, this message translates to:
+  /// **'Welcome pack'**
+  String get welcomePack;
+
+  /// No description provided for @free.
+  ///
+  /// In en, this message translates to:
+  /// **'FREE'**
+  String get free;
+
+  /// No description provided for @freeShipping.
+  ///
+  /// In en, this message translates to:
+  /// **'Free shipping'**
+  String get freeShipping;
+
+  /// No description provided for @securePayment.
+  ///
+  /// In en, this message translates to:
+  /// **'Secure payment'**
+  String get securePayment;
+
+  /// No description provided for @flexibility.
+  ///
+  /// In en, this message translates to:
+  /// **'Flexibility'**
+  String get flexibility;
+
+  /// No description provided for @activityLevelQuestion.
+  ///
+  /// In en, this message translates to:
+  /// **'What is {petName}\'s activity level? 🏃‍♀️'**
+  String activityLevelQuestion(String petName);
+
+  /// No description provided for @chooseActivityLevel.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose the activity level that best describes them.'**
+  String get chooseActivityLevel;
+
+  /// No description provided for @selectOptionForDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Select an option to see the description'**
+  String get selectOptionForDescription;
+
+  /// No description provided for @lowActivityDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'🐕 Carpet dog: daily walks of less than 1h. What they love most is taking a good nap 😴 and staying very quiet.'**
+  String get lowActivityDescription;
+
+  /// No description provided for @mediumActivityDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'🐕 Zen dog: daily walks of 1 to 2h. Enjoys good walks, but also knows when to rest 😊'**
+  String get mediumActivityDescription;
+
+  /// No description provided for @highActivityDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'🐕 Earthquake dog: daily walks of more than 2h. What a whirlwind of energy! 💪'**
+  String get highActivityDescription;
+
+  /// No description provided for @silhouetteQuestion.
+  ///
+  /// In en, this message translates to:
+  /// **'Which silhouette best represents {petName}?'**
+  String silhouetteQuestion(String petName);
+
+  /// No description provided for @selectSimilarFigure.
+  ///
+  /// In en, this message translates to:
+  /// **'Select the figure that most resembles their weight and shape 🐕'**
+  String get selectSimilarFigure;
+
+  /// No description provided for @weightDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'The weight of {petName} is approximately'**
+  String weightDescription(String petName);
+
+  /// No description provided for @kg.
+  ///
+  /// In en, this message translates to:
+  /// **'kg'**
+  String get kg;
+
+  /// No description provided for @whyImportant.
+  ///
+  /// In en, this message translates to:
+  /// **'Why is it important? 🤔'**
+  String get whyImportant;
+
+  /// No description provided for @thinSilhouetteDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Perfect figure: The waist is visible and ribs are easy to feel.'**
+  String get thinSilhouetteDescription;
+
+  /// No description provided for @normalSilhouetteDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'At ideal weight: Looks proportioned and healthy.'**
+  String get normalSilhouetteDescription;
+
+  /// No description provided for @overweightSilhouetteDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'A bit chubby: Some overweight is noticeable, but nothing serious.'**
+  String get overweightSilhouetteDescription;
+
+  /// No description provided for @birthDateQuestion.
+  ///
+  /// In en, this message translates to:
+  /// **'When was {petName} born?'**
+  String birthDateQuestion(String petName);
+
+  /// No description provided for @calorieNeedsVaryByAge.
+  ///
+  /// In en, this message translates to:
+  /// **'Caloric needs vary according to your dog\'s age, but we will adapt perfectly to their life stage 😊'**
+  String get calorieNeedsVaryByAge;
+
+  /// No description provided for @january.
+  ///
+  /// In en, this message translates to:
+  /// **'January'**
+  String get january;
+
+  /// No description provided for @february.
+  ///
+  /// In en, this message translates to:
+  /// **'February'**
+  String get february;
+
+  /// No description provided for @march.
+  ///
+  /// In en, this message translates to:
+  /// **'March'**
+  String get march;
+
+  /// No description provided for @april.
+  ///
+  /// In en, this message translates to:
+  /// **'April'**
+  String get april;
+
+  /// No description provided for @may.
+  ///
+  /// In en, this message translates to:
+  /// **'May'**
+  String get may;
+
+  /// No description provided for @june.
+  ///
+  /// In en, this message translates to:
+  /// **'June'**
+  String get june;
+
+  /// No description provided for @july.
+  ///
+  /// In en, this message translates to:
+  /// **'July'**
+  String get july;
+
+  /// No description provided for @august.
+  ///
+  /// In en, this message translates to:
+  /// **'August'**
+  String get august;
+
+  /// No description provided for @september.
+  ///
+  /// In en, this message translates to:
+  /// **'September'**
+  String get september;
+
+  /// No description provided for @october.
+  ///
+  /// In en, this message translates to:
+  /// **'October'**
+  String get october;
+
+  /// No description provided for @november.
+  ///
+  /// In en, this message translates to:
+  /// **'November'**
+  String get november;
+
+  /// No description provided for @december.
+  ///
+  /// In en, this message translates to:
+  /// **'December'**
+  String get december;
+
+  /// No description provided for @breedQuestion.
+  ///
+  /// In en, this message translates to:
+  /// **'What breed is your little one?'**
+  String get breedQuestion;
+
+  /// No description provided for @searchBreedPlaceholder.
+  ///
+  /// In en, this message translates to:
+  /// **'Search or write their breed 🐶'**
+  String get searchBreedPlaceholder;
+
+  /// No description provided for @foodCriticQuestion.
+  ///
+  /// In en, this message translates to:
+  /// **'What kind of food critic is your dog? 🍽️ 🐕'**
+  String get foodCriticQuestion;
+
+  /// No description provided for @chooseFoodOption.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose the option that best describes {petName}'**
+  String chooseFoodOption(String petName);
+
+  /// No description provided for @selective.
+  ///
+  /// In en, this message translates to:
+  /// **'Selective'**
+  String get selective;
+
+  /// No description provided for @gourmet.
+  ///
+  /// In en, this message translates to:
+  /// **'Gourmet'**
+  String get gourmet;
+
+  /// No description provided for @eatsEverything.
+  ///
+  /// In en, this message translates to:
+  /// **'Eats everything'**
+  String get eatsEverything;
+
+  /// No description provided for @selectiveDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'The selective one: very demanding with food, only eats what they really like 🤔'**
+  String get selectiveDescription;
+
+  /// No description provided for @gourmetDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'The gourmet: loves trying new flavors, but doesn\'t settle for just anything 🤤'**
+  String get gourmetDescription;
+
+  /// No description provided for @eatsEverythingDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Eats everything: no food can resist them, always ready to try 😋'**
+  String get eatsEverythingDescription;
+
+  /// No description provided for @healthConditionsQuestion.
+  ///
+  /// In en, this message translates to:
+  /// **'Does {petName} have any pathology?'**
+  String healthConditionsQuestion(String petName);
+
+  /// No description provided for @yes.
+  ///
+  /// In en, this message translates to:
+  /// **'Yes'**
+  String get yes;
+
+  /// No description provided for @no.
+  ///
+  /// In en, this message translates to:
+  /// **'No'**
+  String get no;
+
+  /// No description provided for @selectedPathologies.
+  ///
+  /// In en, this message translates to:
+  /// **'Selected pathologies:'**
+  String get selectedPathologies;
+
+  /// No description provided for @everyDogIsAWorld.
+  ///
+  /// In en, this message translates to:
+  /// **'Every dog is a world 🌍'**
+  String get everyDogIsAWorld;
+
+  /// No description provided for @dontWorryAdaptMenu.
+  ///
+  /// In en, this message translates to:
+  /// **'Don\'t worry! 🧡 We will adapt our menu to their case, whenever possible. If your dog\'s pathology doesn\'t appear in the form, send an email to nutritionists@dogfydiet.com.'**
+  String get dontWorryAdaptMenu;
+
+  /// No description provided for @selectPathology.
+  ///
+  /// In en, this message translates to:
+  /// **'Select a pathology'**
+  String get selectPathology;
+
+  /// No description provided for @allergiesIntolerances.
+  ///
+  /// In en, this message translates to:
+  /// **'Allergies and food intolerances'**
+  String get allergiesIntolerances;
+
+  /// No description provided for @sensitiveDigestion.
+  ///
+  /// In en, this message translates to:
+  /// **'Sensitive digestion'**
+  String get sensitiveDigestion;
+
+  /// No description provided for @skinProblems.
+  ///
+  /// In en, this message translates to:
+  /// **'Skin problems'**
+  String get skinProblems;
+
+  /// No description provided for @jointProblems.
+  ///
+  /// In en, this message translates to:
+  /// **'Joint problems'**
+  String get jointProblems;
+
+  /// No description provided for @dentalProblems.
+  ///
+  /// In en, this message translates to:
+  /// **'Dental problems'**
+  String get dentalProblems;
+
+  /// No description provided for @diabetes.
+  ///
+  /// In en, this message translates to:
+  /// **'Diabetes'**
+  String get diabetes;
+
+  /// No description provided for @kidneyProblems.
+  ///
+  /// In en, this message translates to:
+  /// **'Kidney problems'**
+  String get kidneyProblems;
+
+  /// No description provided for @heartProblems.
+  ///
+  /// In en, this message translates to:
+  /// **'Heart problems'**
+  String get heartProblems;
+
+  /// No description provided for @overweight.
+  ///
+  /// In en, this message translates to:
+  /// **'Overweight'**
+  String get overweight;
+
+  /// No description provided for @underweight.
+  ///
+  /// In en, this message translates to:
+  /// **'Underweight'**
+  String get underweight;
+
+  /// No description provided for @specialMenuAlmostReady.
+  ///
+  /// In en, this message translates to:
+  /// **'The special menu for {petName} is almost ready!'**
+  String specialMenuAlmostReady(String petName);
+
+  /// No description provided for @acceptTermsMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'By continuing, your progress will be saved and you will be accepting the terms and conditions and privacy policy to receive the best nutrition recommendations. 🧡'**
+  String get acceptTermsMessage;
+
+  /// No description provided for @wantToKnowPet.
+  ///
+  /// In en, this message translates to:
+  /// **'We want to know {petName}!'**
+  String wantToKnowPet(String petName);
+
+  /// No description provided for @male.
+  ///
+  /// In en, this message translates to:
+  /// **'Male'**
+  String get male;
+
+  /// No description provided for @female.
+  ///
+  /// In en, this message translates to:
+  /// **'Female'**
+  String get female;
+
+  /// No description provided for @isNeutered.
+  ///
+  /// In en, this message translates to:
+  /// **'Is neutered?'**
+  String get isNeutered;
+
+  /// No description provided for @isPregnantOrLactating.
+  ///
+  /// In en, this message translates to:
+  /// **'Is {petName} pregnant or lactating?'**
+  String isPregnantOrLactating(String petName);
+
+  /// No description provided for @yourFemale.
+  ///
+  /// In en, this message translates to:
+  /// **'Your female'**
+  String get yourFemale;
+
+  /// No description provided for @afterNeuteringAdjustments.
+  ///
+  /// In en, this message translates to:
+  /// **'After neutering, ration adjustments are required, as the dog usually has lower caloric expenditure.'**
+  String get afterNeuteringAdjustments;
+
+  /// No description provided for @petNameQuestion.
+  ///
+  /// In en, this message translates to:
+  /// **'What is your {breed} called?'**
+  String petNameQuestion(String breed);
+
+  /// No description provided for @dog.
+  ///
+  /// In en, this message translates to:
+  /// **'dog'**
+  String get dog;
+
+  /// No description provided for @myDogIsCalled.
+  ///
+  /// In en, this message translates to:
+  /// **'My dog is called...'**
+  String get myDogIsCalled;
+
+  /// No description provided for @excitementImproveLife.
+  ///
+  /// In en, this message translates to:
+  /// **'How exciting! 🥳 You\'re about to improve your {breed}\'s life through 100% natural nutrition.'**
+  String excitementImproveLife(String breed);
+
+  /// No description provided for @puppyExclamation.
+  ///
+  /// In en, this message translates to:
+  /// **'{petName} is a puppy! 🥰'**
+  String puppyExclamation(String petName);
+
+  /// No description provided for @importantKnowCurrentWeight.
+  ///
+  /// In en, this message translates to:
+  /// **'It\'s important to know their current weight to calculate their ideal portion.'**
+  String get importantKnowCurrentWeight;
+
+  /// No description provided for @knowPuppyWeightFundamental.
+  ///
+  /// In en, this message translates to:
+  /// **'Knowing your puppy\'s weight is fundamental to adapt the feeding plan to their development stage.'**
+  String get knowPuppyWeightFundamental;
+
+  /// No description provided for @back.
+  ///
+  /// In en, this message translates to:
+  /// **'Back'**
+  String get back;
+
+  /// No description provided for @continueButton.
+  ///
+  /// In en, this message translates to:
+  /// **'Continue'**
+  String get continueButton;
 }
 
 class _AppLocalizationsDelegate

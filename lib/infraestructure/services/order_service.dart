@@ -1,7 +1,7 @@
 import 'package:dogfydiet_app/domain/model/objects/order.dart';
 import 'package:dogfydiet_app/domain/model/objects/order_item.dart';
 import 'package:dogfydiet_app/domain/model/value_objects/order_status.dart';
-import 'package:dogfydiet_app/domain/services/order/order_service.dart';
+import 'package:dogfydiet_app/domain/services/order_service.dart';
 
 class OrderServiceImpl implements OrderService {
   // In-memory storage for now (will be replaced with Hive later)
@@ -148,8 +148,7 @@ class OrderServiceImpl implements OrderService {
 
   @override
   Future<List<Order>> getAllOrders() async {
-    // Simulate async operation
-    await Future.delayed(const Duration(milliseconds: 500));
+    await Future.delayed(const Duration(milliseconds: 500)); // Simulating http connection delay
     return _orders.values.toList()..sort((a, b) => b.orderDate.compareTo(a.orderDate));
   }
 
@@ -157,45 +156,5 @@ class OrderServiceImpl implements OrderService {
   Future<Order?> getOrderById(String id) async {
     await Future.delayed(const Duration(milliseconds: 200));
     return _orders[id];
-  }
-
-  @override
-  Future<void> createOrder(Order order) async {
-    await Future.delayed(const Duration(milliseconds: 300));
-    _orders[order.id] = order;
-  }
-
-  @override
-  Future<void> updateOrder(Order order) async {
-    await Future.delayed(const Duration(milliseconds: 300));
-    if (_orders.containsKey(order.id)) {
-      _orders[order.id] = order;
-    }
-  }
-
-  @override
-  Future<void> deleteOrder(String id) async {
-    await Future.delayed(const Duration(milliseconds: 200));
-    _orders.remove(id);
-  }
-
-  @override
-  Future<List<Order>> getOrdersByStatus(OrderStatus status) async {
-    await Future.delayed(const Duration(milliseconds: 400));
-    return _orders.values.where((order) => order.status == status).toList()
-      ..sort((a, b) => b.orderDate.compareTo(a.orderDate));
-  }
-
-  @override
-  Future<List<Order>> getOrdersByCustomer(String customerEmail) async {
-    await Future.delayed(const Duration(milliseconds: 400));
-    return _orders.values.where((order) => order.customerEmail == customerEmail).toList()
-      ..sort((a, b) => b.orderDate.compareTo(a.orderDate));
-  }
-
-  @override
-  Future<void> clearAllOrders() async {
-    await Future.delayed(const Duration(milliseconds: 200));
-    _orders.clear();
   }
 }

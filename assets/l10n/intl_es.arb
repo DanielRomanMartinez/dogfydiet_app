@@ -119,5 +119,280 @@
   "processing": "Procesando",
   "shipped": "Enviado",
   "delivered": "Entregado",
-  "cancelled": "Cancelado"
+  "cancelled": "Cancelado",
+  "sureYouWantToLeave": "¿Seguro que quieres marcharte?",
+  "almostDoneDescription": "Queda muy poquito para que tu perro empiece a disfrutar de su comida como nunca.",
+  "continueLater": "Continuar luego",
+  "comeOnStay": "Venga, me quedo",
+  "aboutToChangeLife": "Estás a punto de cambiar la vida de {petName}",
+  "@aboutToChangeLife": {
+    "placeholders": {
+      "petName": {
+        "type": "String"
+      }
+    }
+  },
+  "specificNeedsDescription": "Debido a las necesidades específicas de {petName}, así queda su plan personalizado.",
+  "@specificNeedsDescription": {
+    "placeholders": {
+      "petName": {
+        "type": "String"
+      }
+    }
+  },
+  "yourDog": "Tu perro",
+  "dailyAmount": "{amount}/día",
+  "@dailyAmount": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "pricePerDay": "Precio: {price} €/día",
+  "@pricePerDay": {
+    "placeholders": {
+      "price": {
+        "type": "String"
+      }
+    }
+  },
+  "packetsDescription": "{packets} bolsitas, 1 bolsitas/día",
+  "@packetsDescription": {
+    "placeholders": {
+      "packets": {
+        "type": "String"
+      }
+    }
+  },
+  "recommended": "RECOMENDADO",
+  "hisPlan": "Su plan: ",
+  "price": "Precio: ",
+  "perDay": "/día",
+  "trial14Days": "Prueba 14 días",
+  "discountLabel": "-{discount}% 🎉",
+  "@discountLabel": {
+    "placeholders": {
+      "discount": {
+        "type": "int"
+      }
+    }
+  },
+  "observePositiveChanges": "Observan cambios positivos por el cambio de alimentación",
+  "noticeDigestionImprovements": "Notan mejoras en las digestiones",
+  "healthierShinerCoat": "Lucen un pelaje más sano y brillante",
+  "receiveMenuWherever": "Recibe el menú de {petName} donde quieras",
+  "@receiveMenuWherever": {
+    "placeholders": {
+      "petName": {
+        "type": "String"
+      }
+    }
+  },
+  "nextAvailableDate": "Próxima fecha disponible",
+  "edit": "Editar",
+  "deliveryData": "Datos de entrega",
+  "name": "Nombre",
+  "myNameIs": "Mi nombre es...",
+  "mySurnameIs": "Mi apellido es...",
+  "fullAddress": "Dirección completa (ej.: Calle de Finisterre, 5, 3ª)",
+  "myAddressIs": "Mi dirección es...",
+  "locality": "Localidad / Ciudad",
+  "myLocalityIs": "Mi localidad es...",
+  "postalCode": "Código postal",
+  "myPostalCodeIs": "Mi código postal es...",
+  "country": "País",
+  "spain": "España",
+  "paymentData": "Datos de pago",
+  "finalizeDogfyDiet": "Finalizar Dogfy Diet",
+  "card": "Tarjeta",
+  "cardNumber": "Número de tarjeta",
+  "securityCode": "Código de seguridad",
+  "needsDaily": "{petName} necesita {amount}/día",
+  "@needsDaily": {
+    "placeholders": {
+      "petName": {
+        "type": "String"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "trialPeriodPrice": "Una vez finalice el período de prueba, el precio de tu plan mensual quedará en {price} €/semana",
+  "@trialPeriodPrice": {
+    "placeholders": {
+      "price": {
+        "type": "String"
+      }
+    }
+  },
+  "promoCodeQuestion": "¿Tienes algún código promocional?",
+  "orderContents": "Lo que contiene tu pedido",
+  "chickenMenu": "Menú de pollo",
+  "turkeyMenu": "Menú de pavo",
+  "salmonMenu": "Menú de salmón",
+  "beefMenu": "Menú de buey",
+  "welcomePack": "Pack de bienvenida",
+  "free": "GRATIS",
+  "freeShipping": "Envío gratis",
+  "securePayment": "Pago seguro",
+  "flexibility": "Flexibilidad",
+  "activityLevelQuestion": "¿Cuál es el nivel de actividad de {petName}? 🏃‍♀️",
+  "@activityLevelQuestion": {
+    "placeholders": {
+      "petName": {
+        "type": "String"
+      }
+    }
+  },
+  "chooseActivityLevel": "Elige el nivel de actividad que mejor le describe.",
+  "selectOptionForDescription": "Selecciona una opción para ver la descripción",
+  "lowActivityDescription": "🐕 Perrita alfombra: paseos diarios de menos de 1h. Lo que más le gusta es echarse una buena siesta 😴 y estar bien tranquilita.",
+  "mediumActivityDescription": "🐕 Perrita zen: paseos diarios de 1 a 2h. Sabe disfrutar de buenas caminatas, pero también sabe cuándo descansar 😊",
+  "highActivityDescription": "🐕 Perrita terremoto: paseos diarios de más de 2h. ¡No veas qué torbellino de energía! 💪",
+  "silhouetteQuestion": "¿Qué silueta representa mejor a {petName}?",
+  "@silhouetteQuestion": {
+    "placeholders": {
+      "petName": {
+        "type": "String"
+      }
+    }
+  },
+  "selectSimilarFigure": "Selecciona la figura que más se asemeja en cuanto a su peso y forma 🐕",
+  "weightDescription": "El peso de {petName} es más o menos de",
+  "@weightDescription": {
+    "placeholders": {
+      "petName": {
+        "type": "String"
+      }
+    }
+  },
+  "kg": "kg",
+  "whyImportant": "¿Por qué es importante? 🤔",
+  "thinSilhouetteDescription": "Hecho un figurín: La cintura es visible y sus costillas son fáciles de palpar.",
+  "normalSilhouetteDescription": "En su peso ideal: Se ve proporcionado y saludable.",
+  "overweightSilhouetteDescription": "Un poco rellenito: Se nota algo de sobrepeso, pero nada grave.",
+  "birthDateQuestion": "¿Cuándo nació {petName}?",
+  "@birthDateQuestion": {
+    "placeholders": {
+      "petName": {
+        "type": "String"
+      }
+    }
+  },
+  "calorieNeedsVaryByAge": "Las necesidades calóricas varían según la edad de tu perrhija, pero nos adaptaremos perfectamente a su momento vital 😊",
+  "january": "Enero",
+  "february": "Febrero",
+  "march": "Marzo",
+  "april": "Abril",
+  "may": "Mayo",
+  "june": "Junio",
+  "july": "Julio",
+  "august": "Agosto",
+  "september": "Septiembre",
+  "october": "Octubre",
+  "november": "Noviembre",
+  "december": "Diciembre",
+  "breedQuestion": "¿Cuál es la raza de tu perrete?",
+  "searchBreedPlaceholder": "Busca o escribe su raza 🐶",
+  "foodCriticQuestion": "¿Qué crítica gastronómica es tu perrhija? 🍽️ 🐕",
+  "chooseFoodOption": "Elige la opción que mejor describe a {petName}",
+  "@chooseFoodOption": {
+    "placeholders": {
+      "petName": {
+        "type": "String"
+      }
+    }
+  },
+  "selective": "Selectivo",
+  "gourmet": "Gourmet",
+  "eatsEverything": "Come todo",
+  "selectiveDescription": "El selectivo: muy exigente con la comida, solo come lo que realmente le gusta 🤔",
+  "gourmetDescription": "La gourmet: le encanta probar nuevos sabores, pero no se conforma con cualquier cosa 🤤",
+  "eatsEverythingDescription": "Come de todo: no hay comida que se le resista, siempre está dispuesto a probar 😋",
+  "healthConditionsQuestion": "¿Tiene {petName} alguna patología?",
+  "@healthConditionsQuestion": {
+    "placeholders": {
+      "petName": {
+        "type": "String"
+      }
+    }
+  },
+  "yes": "Sí",
+  "no": "No",
+  "selectedPathologies": "Patologías seleccionadas:",
+  "everyDogIsAWorld": "Cada perro es un mundo 🌍",
+  "dontWorryAdaptMenu": "¡No te preocupes! 🧡 Adaptaremos nuestro menú a su caso, siempre que sea posible. Si la patología de tu perro no aparece en el formulario, envía un correo a nutricionistas@dogfydiet.com.",
+  "selectPathology": "Selecciona una patología",
+  "allergiesIntolerances": "Alergias e intolerancias alimenticias",
+  "sensitiveDigestion": "Digestiones sensibles",
+  "skinProblems": "Problemas de piel",
+  "jointProblems": "Problemas articulares",
+  "dentalProblems": "Problemas dentales",
+  "diabetes": "Diabetes",
+  "kidneyProblems": "Problemas renales",
+  "heartProblems": "Problemas cardíacos",
+  "overweight": "Sobrepeso",
+  "underweight": "Bajo peso",
+  "specialMenuAlmostReady": "¡El menú especial para {petName} está casi listo!",
+  "@specialMenuAlmostReady": {
+    "placeholders": {
+      "petName": {
+        "type": "String"
+      }
+    }
+  },
+  "acceptTermsMessage": "Al continuar, se guardará tu proceso y estarás aceptando los términos y condiciones y la política de privacidad para recibir las mejores recomendaciones sobre alimentación. 🧡",
+  "wantToKnowPet": "¡Queremos conocer a {petName}!",
+  "@wantToKnowPet": {
+    "placeholders": {
+      "petName": {
+        "type": "String"
+      }
+    }
+  },
+  "male": "Macho",
+  "female": "Hembra",
+  "isNeutered": "¿Está esterilizado/a?",
+  "isPregnantOrLactating": "¿{petName} es gestante o lactante?",
+  "@isPregnantOrLactating": {
+    "placeholders": {
+      "petName": {
+        "type": "String"
+      }
+    }
+  },
+  "yourFemale": "Tu perra",
+  "afterNeuteringAdjustments": "Después de la esterilización, se requieren ajustes en la ración, ya que el perro suele tener menor gasto calórico.",
+  "petNameQuestion": "¿Cómo se llama tu {breed}?",
+  "@petNameQuestion": {
+    "placeholders": {
+      "breed": {
+        "type": "String"
+      }
+    }
+  },
+  "dog": "perro",
+  "myDogIsCalled": "Mi perrhijo se llama...",
+  "excitementImproveLife": "¡Qué emoción! 🥳 Estás a punto de mejorar la vida de tu {breed} a través de una alimentación 100% natural.",
+  "@excitementImproveLife": {
+    "placeholders": {
+      "breed": {
+        "type": "String"
+      }
+    }
+  },
+  "puppyExclamation": "¡{petName} es un cachorro! 🥰",
+  "@puppyExclamation": {
+    "placeholders": {
+      "petName": {
+        "type": "String"
+      }
+    }
+  },
+  "importantKnowCurrentWeight": "Es importante saber su peso actual para calcular su ración ideal.",
+  "knowPuppyWeightFundamental": "Conocer el peso de tu cachorro es fundamental para adaptar el plan de alimentación a su etapa de desarrollo.",
+  "back": "Atrás",
+  "continueButton": "Continuar"
 }

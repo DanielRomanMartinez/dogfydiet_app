@@ -14,13 +14,13 @@ class SplashScreenNotifier extends _$SplashScreenNotifier {
   void getNextPage() {
     state = const SplashScreenState.loading();
 
-    Future.delayed(const Duration(milliseconds: 500), () {
+    Future.delayed(const Duration(milliseconds: 500), () async {
       try {
         final routerService = ref.read(routerServiceProvider);
-        final nextPage = routerService.getNextPage();
+        final nextPage = await routerService.getNextPage();
         state = SplashScreenState.success(nextPage: nextPage);
       } catch (e) {
-        state = SplashScreenState.error(error: 'Error al obtener la siguiente página: $e');
+        state = SplashScreenState.error(error: 'Error al obtener la siguiente página: $e'); // TODO: Crashlytics
       }
     });
   }
@@ -53,7 +53,6 @@ class SplashScreenState extends Equatable {
 
   const SplashScreenState.error({required String error}) : this._(error: error);
 
-  // Helper getters
   bool get hasNextPage => nextPage != null;
   bool get hasError => error != null;
   bool get isInitial => !isLoading && nextPage == null && error == null;
