@@ -1,0 +1,123 @@
+{
+  "@@locale": "fr",
+  "preferences": "Préférences",
+  "personalizeExperience": "Personnalisez votre expérience",
+  "appearance": "Apparence",
+  "darkMode": "Mode sombre",
+  "lightModeActive": "Interface claire activée",
+  "darkModeActive": "Interface sombre activée",
+  "language": "Langue",
+  "appLanguage": "Langue de l'application",
+  "selectLanguage": "Sélectionner la langue",
+  "configuration": "Configuration",
+  "notifications": "Notifications",
+  "manageAlerts": "Gérer vos alertes",
+  "privacy": "Confidentialité",
+  "dataConfiguration": "Configuration des données",
+  "about": "À propos",
+  "version": "Version 1.0.0",
+  "putRealFoodInBowl": "Mettez de la vraie nourriture dans la gamelle de votre chien",
+  "naturalFoodDescription": "Nourriture naturelle pour chiens, complète et équilibrée. Élaborée par des nutritionnistes",
+  "whatBreedIsYourDog": "Quelle race est votre compagnon ?",
+  "createMenu": "Créer son menu",
+  "improveDigestion": "Améliorer la digestion",
+  "shinierCoat": "Pelage plus brillant",
+  "moreEnergyVitality": "Plus d'énergie et de vitalité",
+  "naturalIngredients": "Ingrédients naturels",
+  "ourProducts": "Nos produits",
+  "premiumMenus": "Menus Premium",
+  "completeDaily": "Nourriture complète quotidienne",
+  "naturalSnacks": "Snacks Naturels",
+  "healthyTreats": "Friandises saines",
+  "supplements": "Suppléments",
+  "specificCare": "Soins spécifiques",
+  "accessories": "Accessoires",
+  "everythingForYourDog": "Tout pour votre chien",
+  "featuredProducts": "Produits vedettes",
+  "viewAll": "Voir tout",
+  "premiumChickenMenu": "Menu Premium Poulet",
+  "richInProteins": "Riche en protéines et légumes",
+  "premiumSalmonMenu": "Menu Premium Saumon",
+  "withOmega3": "Avec Omega-3 et riz complet",
+  "premiumBeefMenu": "Menu Premium Bœuf",
+  "withMediterranean": "Avec légumes méditerranéens",
+  "whyChooseDogfy": "Pourquoi choisir Dogfy Diet ?",
+  "scientificSupport": "Soutien scientifique",
+  "developedByVets": "Développé par des vétérinaires et nutritionnistes",
+  "homeDelivery": "Livraison à domicile",
+  "receiveFreshFood": "Recevez la nourriture fraîche à votre porte",
+  "personalized": "Personnalisé",
+  "menusAdapted": "Menus adaptés aux besoins de votre chien",
+  "selectBreed": "Sélectionnez la race de votre chien",
+  "goldenRetriever": "Golden Retriever",
+  "labrador": "Labrador",
+  "germanShepherd": "Berger Allemand",
+  "frenchBulldog": "Bouledogue Français",
+  "borderCollie": "Border Collie",
+  "siberianHusky": "Husky Sibérien",
+  "chihuahua": "Chihuahua",
+  "yorkshireTerrier": "Yorkshire Terrier",
+  "boxer": "Boxer",
+  "mixedBreed": "Race mixte",
+  "other": "Autre",
+  "myOrders": "Mes Commandes",
+  "manageAndReviewOrders": "Gérez et consultez vos commandes",
+  "orderNumber": "Commande #{id}",
+  "@orderNumber": {
+    "placeholders": {
+      "id": {
+        "type": "String"
+      }
+    }
+  },
+  "itemsCount": "{count, plural, =1{1 produit} other{{count} produits}}",
+  "@itemsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "moreItems": "+ {count} de plus...",
+  "@moreItems": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "total": "Total : €{amount}",
+  "@total": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "changeStatus": "Changer le statut",
+  "delete": "Supprimer",
+  "deleteOrder": "Supprimer la Commande",
+  "deleteOrderConfirmation": "Êtes-vous sûr de vouloir supprimer cette commande ?",
+  "cancel": "Annuler",
+  "filterByStatus": "Filtrer par statut",
+  "all": "Tous",
+  "totalOrders": "Total Commandes",
+  "totalValue": "Valeur Totale",
+  "noOrdersWithStatus": "Aucune commande avec ce statut",
+  "noOrdersYet": "Vous n'avez pas encore de commandes",
+  "tryDifferentFilter": "Essayez un filtre différent ou consultez toutes les commandes",
+  "firstOrderMessage": "Lorsque vous passerez votre première commande, elle apparaîtra ici",
+  "clearFilter": "Effacer le filtre",
+  "goToShop": "Aller à la boutique",
+  "orderDetails": "Détails de la Commande",
+  "customer": "Client",
+  "email": "Email",
+  "date": "Date",
+  "notes": "Notes",
+  "subtotal": "Sous-total",
+  "pending": "En attente",
+  "processing": "En cours",
+  "shipped": "Expédié",
+  "delivered": "Livré",
+  "cancelled": "Annulé"
+}

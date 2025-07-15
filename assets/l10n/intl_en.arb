@@ -1,0 +1,123 @@
+{
+  "@@locale": "en",
+  "preferences": "Preferences",
+  "personalizeExperience": "Personalize your experience",
+  "appearance": "Appearance",
+  "darkMode": "Dark mode",
+  "lightModeActive": "Light interface activated",
+  "darkModeActive": "Dark interface activated",
+  "language": "Language",
+  "appLanguage": "App language",
+  "selectLanguage": "Select language",
+  "configuration": "Settings",
+  "notifications": "Notifications",
+  "manageAlerts": "Manage your alerts",
+  "privacy": "Privacy",
+  "dataConfiguration": "Data settings",
+  "about": "About",
+  "version": "Version 1.0.0",
+  "putRealFoodInBowl": "Put real food in your dog's bowl",
+  "naturalFoodDescription": "Natural food for dogs, complete and balanced. Made by nutritionists",
+  "whatBreedIsYourDog": "What breed is your furry friend?",
+  "createMenu": "Create their menu",
+  "improveDigestion": "Improve digestion",
+  "shinierCoat": "Shinier coat",
+  "moreEnergyVitality": "More energy and vitality",
+  "naturalIngredients": "Natural ingredients",
+  "ourProducts": "Our products",
+  "premiumMenus": "Premium Menus",
+  "completeDaily": "Complete daily food",
+  "naturalSnacks": "Natural Snacks",
+  "healthyTreats": "Healthy treats",
+  "supplements": "Supplements",
+  "specificCare": "Specific care",
+  "accessories": "Accessories",
+  "everythingForYourDog": "Everything for your dog",
+  "featuredProducts": "Featured products",
+  "viewAll": "View all",
+  "premiumChickenMenu": "Premium Chicken Menu",
+  "richInProteins": "Rich in proteins and vegetables",
+  "premiumSalmonMenu": "Premium Salmon Menu",
+  "withOmega3": "With Omega-3 and brown rice",
+  "premiumBeefMenu": "Premium Beef Menu",
+  "withMediterranean": "With Mediterranean vegetables",
+  "whyChooseDogfy": "Why choose Dogfy Diet?",
+  "scientificSupport": "Scientific support",
+  "developedByVets": "Developed by veterinarians and nutritionists",
+  "homeDelivery": "Home delivery",
+  "receiveFreshFood": "Receive fresh food at your door",
+  "personalized": "Personalized",
+  "menusAdapted": "Menus adapted to your dog's needs",
+  "selectBreed": "Select your dog's breed",
+  "goldenRetriever": "Golden Retriever",
+  "labrador": "Labrador",
+  "germanShepherd": "German Shepherd",
+  "frenchBulldog": "French Bulldog",
+  "borderCollie": "Border Collie",
+  "siberianHusky": "Siberian Husky",
+  "chihuahua": "Chihuahua",
+  "yorkshireTerrier": "Yorkshire Terrier",
+  "boxer": "Boxer",
+  "mixedBreed": "Mixed breed",
+  "other": "Other",
+  "myOrders": "My Orders",
+  "manageAndReviewOrders": "Manage and review your orders",
+  "orderNumber": "Order #{id}",
+  "@orderNumber": {
+    "placeholders": {
+      "id": {
+        "type": "String"
+      }
+    }
+  },
+  "itemsCount": "{count, plural, =1{1 product} other{{count} products}}",
+  "@itemsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "moreItems": "+ {count} more...",
+  "@moreItems": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "total": "Total: €{amount}",
+  "@total": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "changeStatus": "Change status",
+  "delete": "Delete",
+  "deleteOrder": "Delete Order",
+  "deleteOrderConfirmation": "Are you sure you want to delete this order?",
+  "cancel": "Cancel",
+  "filterByStatus": "Filter by status",
+  "all": "All",
+  "totalOrders": "Total Orders",
+  "totalValue": "Total Value",
+  "noOrdersWithStatus": "No orders with this status",
+  "noOrdersYet": "You don't have any orders yet",
+  "tryDifferentFilter": "Try a different filter or check all orders",
+  "firstOrderMessage": "When you place your first order, it will appear here",
+  "clearFilter": "Clear filter",
+  "goToShop": "Go to shop",
+  "orderDetails": "Order Details",
+  "customer": "Customer",
+  "email": "Email",
+  "date": "Date",
+  "notes": "Notes",
+  "subtotal": "Subtotal",
+  "pending": "Pending",
+  "processing": "Processing",
+  "shipped": "Shipped",
+  "delivered": "Delivered",
+  "cancelled": "Cancelled"
+}

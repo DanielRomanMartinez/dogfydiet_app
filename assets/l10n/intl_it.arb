@@ -1,0 +1,123 @@
+{
+  "@@locale": "it",
+  "preferences": "Preferenze",
+  "personalizeExperience": "Personalizza la tua esperienza",
+  "appearance": "Aspetto",
+  "darkMode": "Modalità scura",
+  "lightModeActive": "Interfaccia chiara attivata",
+  "darkModeActive": "Interfaccia scura attivata",
+  "language": "Lingua",
+  "appLanguage": "Lingua dell'applicazione",
+  "selectLanguage": "Seleziona lingua",
+  "configuration": "Configurazione",
+  "notifications": "Notifiche",
+  "manageAlerts": "Gestisci i tuoi avvisi",
+  "privacy": "Privacy",
+  "dataConfiguration": "Configurazione dati",
+  "about": "Informazioni",
+  "version": "Versione 1.0.0",
+  "putRealFoodInBowl": "Metti vero cibo nella ciotola del tuo cane",
+  "naturalFoodDescription": "Cibo naturale per cani, completo ed equilibrato. Elaborato da nutrizionisti",
+  "whatBreedIsYourDog": "Che razza è il tuo peloso?",
+  "createMenu": "Crea il suo menu",
+  "improveDigestion": "Migliorano la digestione",
+  "shinierCoat": "Pelo più brillante",
+  "moreEnergyVitality": "Più energia e vitalità",
+  "naturalIngredients": "Ingredienti naturali",
+  "ourProducts": "I nostri prodotti",
+  "premiumMenus": "Menu Premium",
+  "completeDaily": "Cibo completo quotidiano",
+  "naturalSnacks": "Snack Naturali",
+  "healthyTreats": "Premi salutari",
+  "supplements": "Integratori",
+  "specificCare": "Cura specifica",
+  "accessories": "Accessori",
+  "everythingForYourDog": "Tutto per il tuo cane",
+  "featuredProducts": "Prodotti in evidenza",
+  "viewAll": "Vedi tutti",
+  "premiumChickenMenu": "Menu Premium Pollo",
+  "richInProteins": "Ricco di proteine e verdure",
+  "premiumSalmonMenu": "Menu Premium Salmone",
+  "withOmega3": "Con Omega-3 e riso integrale",
+  "premiumBeefMenu": "Menu Premium Manzo",
+  "withMediterranean": "Con verdure mediterranee",
+  "whyChooseDogfy": "Perché scegliere Dogfy Diet?",
+  "scientificSupport": "Supporto scientifico",
+  "developedByVets": "Sviluppato da veterinari e nutrizionisti",
+  "homeDelivery": "Consegna a domicilio",
+  "receiveFreshFood": "Ricevi cibo fresco alla tua porta",
+  "personalized": "Personalizzato",
+  "menusAdapted": "Menu adattati alle esigenze del tuo cane",
+  "selectBreed": "Seleziona la razza del tuo cane",
+  "goldenRetriever": "Golden Retriever",
+  "labrador": "Labrador",
+  "germanShepherd": "Pastore Tedesco",
+  "frenchBulldog": "Bulldog Francese",
+  "borderCollie": "Border Collie",
+  "siberianHusky": "Husky Siberiano",
+  "chihuahua": "Chihuahua",
+  "yorkshireTerrier": "Yorkshire Terrier",
+  "boxer": "Boxer",
+  "mixedBreed": "Meticcio",
+  "other": "Altro",
+  "myOrders": "I Miei Ordini",
+  "manageAndReviewOrders": "Gestisci e rivedi i tuoi ordini",
+  "orderNumber": "Ordine #{id}",
+  "@orderNumber": {
+    "placeholders": {
+      "id": {
+        "type": "String"
+      }
+    }
+  },
+  "itemsCount": "{count, plural, =1{1 prodotto} other{{count} prodotti}}",
+  "@itemsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "moreItems": "+ {count} altri...",
+  "@moreItems": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "total": "Totale: €{amount}",
+  "@total": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "changeStatus": "Cambia stato",
+  "delete": "Elimina",
+  "deleteOrder": "Elimina Ordine",
+  "deleteOrderConfirmation": "Sei sicuro di voler eliminare questo ordine?",
+  "cancel": "Annulla",
+  "filterByStatus": "Filtra per stato",
+  "all": "Tutti",
+  "totalOrders": "Totale Ordini",
+  "totalValue": "Valore Totale",
+  "noOrdersWithStatus": "Nessun ordine con questo stato",
+  "noOrdersYet": "Non hai ancora ordini",
+  "tryDifferentFilter": "Prova un filtro diverso o controlla tutti gli ordini",
+  "firstOrderMessage": "Quando effettuerai il tuo primo ordine, apparirà qui",
+  "clearFilter": "Cancella filtro",
+  "goToShop": "Vai al negozio",
+  "orderDetails": "Dettagli dell'Ordine",
+  "customer": "Cliente",
+  "email": "Email",
+  "date": "Data",
+  "notes": "Note",
+  "subtotal": "Subtotale",
+  "pending": "In sospeso",
+  "processing": "In elaborazione",
+  "shipped": "Spedito",
+  "delivered": "Consegnato",
+  "cancelled": "Annullato"
+}
