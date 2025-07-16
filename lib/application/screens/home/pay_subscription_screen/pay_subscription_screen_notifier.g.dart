@@ -7,7 +7,7 @@ part of 'pay_subscription_screen_notifier.dart';
 // **************************************************************************
 
 String _$paySubscriptionScreenNotifierHash() =>
-    r'05fc6db3471635d38040ca19478c0f31df73f5f2';
+    r'cc51bf8100af8c5ef2b12dc1f904a77faf78200f';
 
 /// See also [PaySubscriptionScreenNotifier].
 @ProviderFor(PaySubscriptionScreenNotifier)

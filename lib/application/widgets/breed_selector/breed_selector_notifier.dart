@@ -7,7 +7,6 @@ part 'breed_selector_notifier.g.dart';
 
 @riverpod
 class BreedSelectorNotifier extends _$BreedSelectorNotifier {
-
   @override
   BreedSelectorState build() {
     const initialState = BreedSelectorState(
@@ -45,7 +44,7 @@ class BreedSelectorNotifier extends _$BreedSelectorNotifier {
   }
 
   void clearSelection() {
-    state = state.copyWith(selectedBreed: null);
+    state = state.copyWith(clearSelectedBreed: true);
   }
 
   void clearError() {
@@ -69,12 +68,13 @@ class BreedSelectorState extends Equatable {
   BreedSelectorState copyWith({
     List<DogBreed>? breeds,
     DogBreed? selectedBreed,
+    bool clearSelectedBreed = false,
     bool? isLoading,
     String? error,
   }) {
     return BreedSelectorState(
       breeds: breeds ?? this.breeds,
-      selectedBreed: selectedBreed ?? this.selectedBreed,
+      selectedBreed: clearSelectedBreed ? null : (selectedBreed ?? this.selectedBreed),
       isLoading: isLoading ?? this.isLoading,
       error: error,
     );

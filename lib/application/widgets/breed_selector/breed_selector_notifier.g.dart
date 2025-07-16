@@ -7,7 +7,7 @@ part of 'breed_selector_notifier.dart';
 // **************************************************************************
 
 String _$breedSelectorNotifierHash() =>
-    r'23fce3c60f56a79cd3555c05ef84c88407cabec6';
+    r'db52edf4b78bbacf1c5dd9972271c4709a183d3f';
 
 /// See also [BreedSelectorNotifier].
 @ProviderFor(BreedSelectorNotifier)
