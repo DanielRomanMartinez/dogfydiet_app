@@ -13,14 +13,20 @@ class _FeaturedProducts extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Text(
-                context.l10n.featuredProducts,
-                style: Theme.of(context).textTheme.headlineSmall,
+              Expanded(
+                child: Text(
+                  context.l10n.featuredProducts,
+                  style: Theme.of(context).textTheme.headlineSmall,
+                  overflow: TextOverflow.ellipsis,
+                ),
               ),
               TextButton(
                 onPressed: () {
                   debugPrint('Ver todos los productos');
                 },
+                style: TextButton.styleFrom(
+                  padding: const EdgeInsets.symmetric(horizontal: 8), // Reducir padding
+                ),
                 child: Text(
                   context.l10n.viewAll,
                   style: Theme.of(context).textTheme.labelMedium?.copyWith(
@@ -33,12 +39,13 @@ class _FeaturedProducts extends StatelessWidget {
           const SizedBox(height: Shapes.gutter),
           SizedBox(
             height: 280,
-            child: ListView.builder(
+            child: ListView.separated(
               scrollDirection: Axis.horizontal,
               itemCount: 3,
+              separatorBuilder: (context, index) => const SizedBox(width: 12),
               itemBuilder: (context, index) {
                 return SizedBox(
-                  width: 210,
+                  width: 190,
                   child: _FeaturedProductCard(index),
                 );
               },

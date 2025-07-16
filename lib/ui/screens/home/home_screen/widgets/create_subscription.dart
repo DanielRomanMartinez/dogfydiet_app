@@ -28,16 +28,16 @@ class _CreateSubscription extends ConsumerWidget {
             Text(
               context.l10n.putRealFoodInBowl,
               style: Theme.of(context).textTheme.headlineLarge?.copyWith(
-                color: Theme.of(context).colorScheme.onPrimary,
-                height: 1.2,
-              ),
+                    color: Theme.of(context).colorScheme.onPrimary,
+                    height: 1.2,
+                  ),
             ),
             const SizedBox(height: Shapes.gutter),
             Text(
               context.l10n.naturalFoodDescription,
               style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                color: Theme.of(context).colorScheme.onPrimary.withValues(alpha: 0.9),
-              ),
+                    color: Theme.of(context).colorScheme.onPrimary.withValues(alpha: 0.9),
+                  ),
             ),
             const SizedBox(height: Shapes.gutter2x),
             BreedSelector(
@@ -76,9 +76,9 @@ class _CreateSubscription extends ConsumerWidget {
                     Text(
                       context.l10n.createMenu,
                       style: Theme.of(context).textTheme.labelLarge?.copyWith(
-                        color: Theme.of(context).colorScheme.primary,
-                        fontWeight: FontWeight.w600,
-                      ),
+                            color: Theme.of(context).colorScheme.primary,
+                            fontWeight: FontWeight.w600,
+                          ),
                     ),
                     const SizedBox(width: Shapes.gutterSmall),
                     Icon(
