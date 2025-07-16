@@ -8,28 +8,41 @@ class _StepFoodPreferences extends ConsumerWidget {
 
     return Padding(
       padding: const EdgeInsets.all(Shapes.gutter),
-      child: Column(
-        children: [
-          const Spacer(flex: 1),
-          Text(
-            context.l10n.foodCriticQuestion,
-            style: Theme.of(context).textTheme.headlineMedium,
-            textAlign: TextAlign.center,
-          ),
-          const SizedBox(height: Shapes.gutterSmall),
-          Text(
-            context.l10n.chooseFoodOption(state.form.petName ?? context.l10n.yourDog),
-            style: Theme.of(context).textTheme.bodyMedium,
-            textAlign: TextAlign.center,
-          ),
-          const SizedBox(height: Shapes.gutter2x),
-          _FoodPreferenceSelector(
-            selectedPreference: state.form.foodPreferences,
-            onPreferenceSelected: notifier.updateFoodPreferences,
-          ),
-          const Spacer(flex: 2),
-          const Spacer(flex: 1),
-        ],
+      child: LayoutBuilder(
+        builder: (context, constraints) {
+          return SingleChildScrollView(
+            child: ConstrainedBox(
+              constraints: BoxConstraints(
+                minHeight: constraints.maxHeight,
+              ),
+              child: IntrinsicHeight(
+                child: Column(
+                  children: [
+                    const SizedBox(height: Shapes.gutter),
+                    Text(
+                      context.l10n.foodCriticQuestion,
+                      style: Theme.of(context).textTheme.headlineMedium,
+                      textAlign: TextAlign.center,
+                    ),
+                    const SizedBox(height: Shapes.gutterSmall),
+                    Text(
+                      context.l10n.chooseFoodOption(state.form.petName ?? context.l10n.yourDog),
+                      style: Theme.of(context).textTheme.bodyMedium,
+                      textAlign: TextAlign.center,
+                    ),
+                    const SizedBox(height: Shapes.gutter),
+                    _FoodPreferenceSelector(
+                      selectedPreference: state.form.foodPreferences,
+                      onPreferenceSelected: notifier.updateFoodPreferences,
+                    ),
+                    const Expanded(child: SizedBox()),
+                    const SizedBox(height: Shapes.gutter),
+                  ],
+                ),
+              ),
+            ),
+          );
+        },
       ),
     );
   }
@@ -81,8 +94,8 @@ class _FoodPreferenceSelector extends StatelessWidget {
           child: Text(
             _getDescription(context),
             style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-              color: Theme.of(context).colorScheme.primary,
-            ),
+                  color: Theme.of(context).colorScheme.primary,
+                ),
             textAlign: TextAlign.center,
           ),
         ),
@@ -124,9 +137,7 @@ class _FoodDog extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.all(Shapes.gutter),
         decoration: BoxDecoration(
-          color: isActive
-              ? Theme.of(context).colorScheme.primary.withValues(alpha: 0.1)
-              : Colors.transparent,
+          color: isActive ? Theme.of(context).colorScheme.primary.withValues(alpha: 0.1) : Colors.transparent,
           borderRadius: BorderRadius.circular(Shapes.borderRadius),
         ),
         child: Text(

@@ -112,6 +112,9 @@ To make it easier to identify where everything is. If everything follows the sam
 ### Why did you add multi-language and dark/light themes?
 I tried to make a more functional app, not just the onboarding form, but something closer to what Dogfy might have in mind for the future. The website has 3 languages, and I added one additional. Dark/light mode, despite not being fully polished, is a feature people often appreciate.
 
+### Why Router and not Navigator?
+Because the router is better for handling deep links, which greatly enhance user interactivity.
+
 ## 🌍 Internationalization
 
 Soporte para múltiples idiomas:

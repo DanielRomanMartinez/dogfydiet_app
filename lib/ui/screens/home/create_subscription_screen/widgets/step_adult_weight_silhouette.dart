@@ -31,90 +31,104 @@ class _StepAdultWeightSilhouetteState extends ConsumerState<_StepAdultWeightSilh
 
     return Padding(
       padding: const EdgeInsets.all(Shapes.gutter),
-      child: Column(
-        children: [
-          const Spacer(flex: 1),
-          Text(
-            context.l10n.silhouetteQuestion(state.form.petName ?? context.l10n.yourDog),
-            style: Theme.of(context).textTheme.headlineMedium,
-            textAlign: TextAlign.center,
-          ),
-          const SizedBox(height: Shapes.gutterSmall),
-          Text(
-            context.l10n.selectSimilarFigure,
-            style: Theme.of(context).textTheme.bodyMedium,
-            textAlign: TextAlign.center,
-          ),
-          const SizedBox(height: Shapes.gutter2x),
-
-          _SilhouetteSelector(
-            selectedSilhouette: state.form.petSilhouette,
-            onSilhouetteSelected: notifier.updatePetSilhouette,
-          ),
-
-          const SizedBox(height: Shapes.gutter2x),
-
-          if (state.form.petSilhouette != null) ...[
-            Container(
-              padding: const EdgeInsets.all(Shapes.gutter),
-              decoration: BoxDecoration(
-                color: Theme.of(context).colorScheme.primary.withValues(alpha: 0.1),
-                borderRadius: BorderRadius.circular(Shapes.borderRadiusLarge),
+      child: LayoutBuilder(
+        builder: (context, constraints) {
+          return SingleChildScrollView(
+            child: ConstrainedBox(
+              constraints: BoxConstraints(
+                minHeight: constraints.maxHeight,
               ),
-              child: Column(
-                children: [
-                  Text(
-                    _getSilhouetteDescription(context, state.form.petSilhouette!),
-                    style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                      color: Theme.of(context).colorScheme.primary,
+              child: IntrinsicHeight(
+                child: Column(
+                  children: [
+                    const SizedBox(height: Shapes.gutter),
+                    Text(
+                      context.l10n.silhouetteQuestion(state.form.petName ?? context.l10n.yourDog),
+                      style: Theme.of(context).textTheme.headlineMedium,
+                      textAlign: TextAlign.center,
                     ),
-                    textAlign: TextAlign.center,
-                  ),
-                  const SizedBox(height: Shapes.gutter),
-                  Text(
-                    context.l10n.weightDescription(state.form.petName ?? context.l10n.yourDog),
-                    style: Theme.of(context).textTheme.titleMedium,
-                    textAlign: TextAlign.center,
-                  ),
-                  const SizedBox(height: Shapes.gutter),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      SizedBox(
-                        width: 100,
-                        child: TextField(
-                          controller: _weightController,
-                          keyboardType: TextInputType.number,
-                          textAlign: TextAlign.center,
-                          style: Theme.of(context).textTheme.headlineSmall,
-                          decoration: InputDecoration(
-                            border: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(Shapes.borderRadius),
+                    const SizedBox(height: Shapes.gutterSmall),
+                    Text(
+                      context.l10n.selectSimilarFigure,
+                      style: Theme.of(context).textTheme.bodyMedium,
+                      textAlign: TextAlign.center,
+                    ),
+                    const SizedBox(height: Shapes.gutter),
+
+                    _SilhouetteSelector(
+                      selectedSilhouette: state.form.petSilhouette,
+                      onSilhouetteSelected: notifier.updatePetSilhouette,
+                    ),
+
+                    const SizedBox(height: Shapes.gutter),
+
+                    if (state.form.petSilhouette != null) ...[
+                      Container(
+                        padding: const EdgeInsets.all(Shapes.gutter),
+                        decoration: BoxDecoration(
+                          color: Theme.of(context).colorScheme.primary.withValues(alpha: 0.1),
+                          borderRadius: BorderRadius.circular(Shapes.borderRadiusLarge),
+                        ),
+                        child: Column(
+                          children: [
+                            Text(
+                              _getSilhouetteDescription(context, state.form.petSilhouette!),
+                              style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                                color: Theme.of(context).colorScheme.primary,
+                              ),
+                              textAlign: TextAlign.center,
                             ),
-                            contentPadding: const EdgeInsets.symmetric(vertical: Shapes.gutter),
-                          ),
-                          onChanged: (value) {
-                            final weight = double.tryParse(value);
-                            if (weight != null) {
-                              notifier.updatePetWeight(weight);
-                            }
-                          },
+                            const SizedBox(height: Shapes.gutter),
+                            Text(
+                              context.l10n.weightDescription(state.form.petName ?? context.l10n.yourDog),
+                              style: Theme.of(context).textTheme.titleMedium,
+                              textAlign: TextAlign.center,
+                            ),
+                            const SizedBox(height: Shapes.gutter),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                SizedBox(
+                                  width: 100,
+                                  child: TextField(
+                                    controller: _weightController,
+                                    keyboardType: TextInputType.number,
+                                    textAlign: TextAlign.center,
+                                    style: Theme.of(context).textTheme.headlineSmall,
+                                    decoration: InputDecoration(
+                                      border: OutlineInputBorder(
+                                        borderRadius: BorderRadius.circular(Shapes.borderRadius),
+                                      ),
+                                      contentPadding: const EdgeInsets.symmetric(vertical: Shapes.gutter),
+                                    ),
+                                    onChanged: (value) {
+                                      final weight = double.tryParse(value);
+                                      if (weight != null) {
+                                        notifier.updatePetWeight(weight);
+                                      }
+                                    },
+                                  ),
+                                ),
+                                const SizedBox(width: Shapes.gutterSmall),
+                                Text(
+                                  context.l10n.kg,
+                                  style: Theme.of(context).textTheme.headlineSmall,
+                                ),
+                              ],
+                            ),
+                          ],
                         ),
                       ),
-                      const SizedBox(width: Shapes.gutterSmall),
-                      Text(
-                        context.l10n.kg,
-                        style: Theme.of(context).textTheme.headlineSmall,
-                      ),
                     ],
-                  ),
-                ],
+
+                    const Expanded(child: SizedBox()),
+                    const SizedBox(height: Shapes.gutter),
+                  ],
+                ),
               ),
             ),
-          ],
-
-          const Spacer(flex: 2),
-        ],
+          );
+        },
       ),
     );
   }

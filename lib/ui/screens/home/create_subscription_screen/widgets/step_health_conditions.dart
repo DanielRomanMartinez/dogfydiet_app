@@ -8,106 +8,119 @@ class _StepHealthConditions extends ConsumerWidget {
 
     return Padding(
       padding: const EdgeInsets.all(Shapes.gutter),
-      child: Column(
-        children: [
-          const Spacer(flex: 1),
-          Container(
-            padding: const EdgeInsets.all(Shapes.gutter),
-            decoration: BoxDecoration(
-              color: Theme.of(context).colorScheme.primary.withValues(alpha: 0.1),
-              shape: BoxShape.circle,
-            ),
-            child: const Text(
-              '❤️',
-              style: TextStyle(fontSize: 32),
-            ),
-          ),
-          const SizedBox(height: Shapes.gutter2x),
-          Text(
-            context.l10n.healthConditionsQuestion(state.form.petName ?? context.l10n.yourDog),
-            style: Theme.of(context).textTheme.headlineMedium,
-            textAlign: TextAlign.center,
-          ),
-          const SizedBox(height: Shapes.gutter2x),
-          Row(
-            children: [
-              Expanded(
-                child: _GenderButton(
-                  label: context.l10n.yes,
-                  isSelected: (state.form.healthConditions?.isNotEmpty ?? false),
-                  onTap: () {
-                    _showHealthConditionsSelector(context, ref);
-                  },
+      child: LayoutBuilder(
+        builder: (context, constraints) {
+          return SingleChildScrollView(
+            child: ConstrainedBox(
+              constraints: BoxConstraints(
+                minHeight: constraints.maxHeight,
+              ),
+              child: IntrinsicHeight(
+                child: Column(
+                  children: [
+                    const SizedBox(height: Shapes.gutter),
+                    Container(
+                      padding: const EdgeInsets.all(Shapes.gutter),
+                      decoration: BoxDecoration(
+                        color: Theme.of(context).colorScheme.primary.withValues(alpha: 0.1),
+                        shape: BoxShape.circle,
+                      ),
+                      child: const Text(
+                        '❤️',
+                        style: TextStyle(fontSize: 32),
+                      ),
+                    ),
+                    const SizedBox(height: Shapes.gutter),
+                    Text(
+                      context.l10n.healthConditionsQuestion(state.form.petName ?? context.l10n.yourDog),
+                      style: Theme.of(context).textTheme.headlineMedium,
+                      textAlign: TextAlign.center,
+                    ),
+                    const SizedBox(height: Shapes.gutter),
+                    Row(
+                      children: [
+                        Expanded(
+                          child: _GenderButton(
+                            label: context.l10n.yes,
+                            isSelected: (state.form.healthConditions?.isNotEmpty ?? false),
+                            onTap: () {
+                              _showHealthConditionsSelector(context, ref);
+                            },
+                          ),
+                        ),
+                        const SizedBox(width: Shapes.gutter),
+                        Expanded(
+                          child: _GenderButton(
+                            label: context.l10n.no,
+                            isSelected: state.form.healthConditions?.isEmpty ?? true,
+                            onTap: () => notifier.updateHealthConditions([]),
+                          ),
+                        ),
+                      ],
+                    ),
+                    if (state.form.healthConditions?.isNotEmpty ?? false) ...[
+                      const SizedBox(height: Shapes.gutter),
+                      Container(
+                        width: double.infinity,
+                        padding: const EdgeInsets.all(Shapes.gutter),
+                        decoration: BoxDecoration(
+                          color: Theme.of(context).colorScheme.secondary.withValues(alpha: 0.1),
+                          borderRadius: BorderRadius.circular(Shapes.borderRadius),
+                          border: Border.all(
+                            color: Theme.of(context).colorScheme.secondary.withValues(alpha: 0.3),
+                          ),
+                        ),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              context.l10n.selectedPathologies,
+                              style: Theme.of(context).textTheme.titleSmall,
+                            ),
+                            const SizedBox(height: Shapes.gutterSmall),
+                            Text(
+                              state.form.healthConditions!.join(', '),
+                              style: Theme.of(context).textTheme.bodyMedium,
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
+                    const Expanded(child: SizedBox()),
+                    Container(
+                      padding: const EdgeInsets.all(Shapes.gutter),
+                      decoration: BoxDecoration(
+                        color: Theme.of(context).colorScheme.primary.withValues(alpha: 0.1),
+                        borderRadius: BorderRadius.circular(Shapes.borderRadiusLarge),
+                      ),
+                      child: Column(
+                        children: [
+                          Text(
+                            context.l10n.everyDogIsAWorld,
+                            style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                              color: Theme.of(context).colorScheme.primary,
+                              fontWeight: FontWeight.w600,
+                            ),
+                            textAlign: TextAlign.center,
+                          ),
+                          const SizedBox(height: Shapes.gutterSmall),
+                          Text(
+                            context.l10n.dontWorryAdaptMenu,
+                            style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                              color: Theme.of(context).colorScheme.primary,
+                            ),
+                            textAlign: TextAlign.center,
+                          ),
+                        ],
+                      ),
+                    ),
+                    const SizedBox(height: Shapes.gutter),
+                  ],
                 ),
               ),
-              const SizedBox(width: Shapes.gutter),
-              Expanded(
-                child: _GenderButton(
-                  label: context.l10n.no,
-                  isSelected: state.form.healthConditions?.isEmpty ?? true,
-                  onTap: () => notifier.updateHealthConditions([]),
-                ),
-              ),
-            ],
-          ),
-          if (state.form.healthConditions?.isNotEmpty ?? false) ...[
-            const SizedBox(height: Shapes.gutter),
-            Container(
-              width: double.infinity,
-              padding: const EdgeInsets.all(Shapes.gutter),
-              decoration: BoxDecoration(
-                color: Theme.of(context).colorScheme.secondary.withValues(alpha: 0.1),
-                borderRadius: BorderRadius.circular(Shapes.borderRadius),
-                border: Border.all(
-                  color: Theme.of(context).colorScheme.secondary.withValues(alpha: 0.3),
-                ),
-              ),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    context.l10n.selectedPathologies,
-                    style: Theme.of(context).textTheme.titleSmall,
-                  ),
-                  const SizedBox(height: Shapes.gutterSmall),
-                  Text(
-                    state.form.healthConditions!.join(', '),
-                    style: Theme.of(context).textTheme.bodyMedium,
-                  ),
-                ],
-              ),
             ),
-          ],
-          const Spacer(flex: 2),
-          Container(
-            padding: const EdgeInsets.all(Shapes.gutter),
-            decoration: BoxDecoration(
-              color: Theme.of(context).colorScheme.primary.withValues(alpha: 0.1),
-              borderRadius: BorderRadius.circular(Shapes.borderRadiusLarge),
-            ),
-            child: Column(
-              children: [
-                Text(
-                  context.l10n.everyDogIsAWorld,
-                  style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                    color: Theme.of(context).colorScheme.primary,
-                    fontWeight: FontWeight.w600,
-                  ),
-                  textAlign: TextAlign.center,
-                ),
-                const SizedBox(height: Shapes.gutterSmall),
-                Text(
-                  context.l10n.dontWorryAdaptMenu,
-                  style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                    color: Theme.of(context).colorScheme.primary,
-                  ),
-                  textAlign: TextAlign.center,
-                ),
-              ],
-            ),
-          ),
-          const Spacer(flex: 1),
-        ],
+          );
+        },
       ),
     );
   }

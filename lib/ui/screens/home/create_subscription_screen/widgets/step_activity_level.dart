@@ -8,27 +8,41 @@ class _StepActivityLevel extends ConsumerWidget {
 
     return Padding(
       padding: const EdgeInsets.all(Shapes.gutter),
-      child: Column(
-        children: [
-          const Spacer(flex: 1),
-          Text(
-            context.l10n.activityLevelQuestion(state.form.petName ?? context.l10n.yourDog),
-            style: Theme.of(context).textTheme.headlineMedium,
-            textAlign: TextAlign.center,
-          ),
-          const SizedBox(height: Shapes.gutterSmall),
-          Text(
-            context.l10n.chooseActivityLevel,
-            style: Theme.of(context).textTheme.bodyMedium,
-            textAlign: TextAlign.center,
-          ),
-          const SizedBox(height: Shapes.gutter2x),
-          _ActivityLevelSelector(
-            selectedLevel: state.form.activityLevel,
-            onLevelSelected: notifier.updateActivityLevel,
-          ),
-          const Spacer(flex: 3),
-        ],
+      child: LayoutBuilder(
+        builder: (context, constraints) {
+          return SingleChildScrollView(
+            child: ConstrainedBox(
+              constraints: BoxConstraints(
+                minHeight: constraints.maxHeight,
+              ),
+              child: IntrinsicHeight(
+                child: Column(
+                  children: [
+                    const SizedBox(height: Shapes.gutter),
+                    Text(
+                      context.l10n.activityLevelQuestion(state.form.petName ?? context.l10n.yourDog),
+                      style: Theme.of(context).textTheme.headlineMedium,
+                      textAlign: TextAlign.center,
+                    ),
+                    const SizedBox(height: Shapes.gutterSmall),
+                    Text(
+                      context.l10n.chooseActivityLevel,
+                      style: Theme.of(context).textTheme.bodyMedium,
+                      textAlign: TextAlign.center,
+                    ),
+                    const SizedBox(height: Shapes.gutter),
+                    _ActivityLevelSelector(
+                      selectedLevel: state.form.activityLevel,
+                      onLevelSelected: notifier.updateActivityLevel,
+                    ),
+                    const Expanded(child: SizedBox()),
+                    const SizedBox(height: Shapes.gutter),
+                  ],
+                ),
+              ),
+            ),
+          );
+        },
       ),
     );
   }
@@ -77,8 +91,8 @@ class _ActivityLevelSelector extends StatelessWidget {
           child: Text(
             _getDescription(context),
             style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                  color: Theme.of(context).colorScheme.primary,
-                ),
+              color: Theme.of(context).colorScheme.primary,
+            ),
             textAlign: TextAlign.center,
           ),
         ),

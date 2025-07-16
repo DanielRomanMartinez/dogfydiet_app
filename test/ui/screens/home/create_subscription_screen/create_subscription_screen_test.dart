@@ -90,10 +90,11 @@ void main() {
       await tester.pump(Duration.zero);
 
       expect(
-          find.byWidgetPredicate(
-            (widget) => widget is Container && widget.decoration != null,
-          ),
-          findsAtLeastNWidgets(1));
+        find.byWidgetPredicate(
+          (widget) => widget is Container && widget.decoration != null,
+        ),
+        findsAtLeastNWidgets(1),
+      );
     });
 
     testWidgets('should display navigation buttons', (WidgetTester tester) async {
@@ -354,10 +355,10 @@ void main() {
     });
 
     testWidgets('should handle different form validation states', (WidgetTester tester) async {
-      final invalidForm = SubscriptionForm(
+      const invalidForm = SubscriptionForm(
         currentStep: SubscriptionForm.stepBreedSelection,
       );
-      final invalidState = CreateSubscriptionScreenState(
+      const invalidState = CreateSubscriptionScreenState(
         form: invalidForm,
         isLoading: false,
         error: null,

@@ -8,64 +8,77 @@ class _StepBirthDate extends ConsumerWidget {
 
     return Padding(
       padding: const EdgeInsets.all(Shapes.gutter),
-      child: Column(
-        children: [
-          const Spacer(flex: 1),
-          Container(
-            padding: const EdgeInsets.all(Shapes.gutter),
-            decoration: BoxDecoration(
-              color: Theme.of(context).colorScheme.primary.withValues(alpha: 0.1),
-              shape: BoxShape.circle,
-            ),
-            child: const Text(
-              '🎂',
-              style: TextStyle(fontSize: 32),
-            ),
-          ),
-          const SizedBox(height: Shapes.gutter2x),
-          Text(
-            context.l10n.birthDateQuestion(state.form.petName ?? context.l10n.yourDog),
-            style: Theme.of(context).textTheme.headlineMedium,
-            textAlign: TextAlign.center,
-          ),
-          const SizedBox(height: Shapes.gutter2x),
-          _DateSelector(
-            selectedDate: state.form.petBirthDate,
-            onDateChanged: notifier.updatePetBirthDate,
-          ),
-          const Spacer(flex: 2),
-          Container(
-            padding: const EdgeInsets.all(Shapes.gutter),
-            decoration: BoxDecoration(
-              color: Theme.of(context).colorScheme.primary.withValues(alpha: 0.1),
-              borderRadius: BorderRadius.circular(Shapes.borderRadiusLarge),
-            ),
-            child: Row(
-              children: [
-                Text(
-                  context.l10n.whyImportant,
-                  style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                    color: Theme.of(context).colorScheme.primary,
-                    fontWeight: FontWeight.w600,
-                  ),
+      child: LayoutBuilder(
+        builder: (context, constraints) {
+          return SingleChildScrollView(
+            child: ConstrainedBox(
+              constraints: BoxConstraints(
+                minHeight: constraints.maxHeight,
+              ),
+              child: IntrinsicHeight(
+                child: Column(
+                  children: [
+                    const SizedBox(height: Shapes.gutter),
+                    Container(
+                      padding: const EdgeInsets.all(Shapes.gutter),
+                      decoration: BoxDecoration(
+                        color: Theme.of(context).colorScheme.primary.withValues(alpha: 0.1),
+                        shape: BoxShape.circle,
+                      ),
+                      child: const Text(
+                        '🎂',
+                        style: TextStyle(fontSize: 32),
+                      ),
+                    ),
+                    const SizedBox(height: Shapes.gutter),
+                    Text(
+                      context.l10n.birthDateQuestion(state.form.petName ?? context.l10n.yourDog),
+                      style: Theme.of(context).textTheme.headlineMedium,
+                      textAlign: TextAlign.center,
+                    ),
+                    const SizedBox(height: Shapes.gutter),
+                    _DateSelector(
+                      selectedDate: state.form.petBirthDate,
+                      onDateChanged: notifier.updatePetBirthDate,
+                    ),
+                    const Expanded(child: SizedBox()),
+                    Container(
+                      padding: const EdgeInsets.all(Shapes.gutter),
+                      decoration: BoxDecoration(
+                        color: Theme.of(context).colorScheme.primary.withValues(alpha: 0.1),
+                        borderRadius: BorderRadius.circular(Shapes.borderRadiusLarge),
+                      ),
+                      child: Row(
+                        children: [
+                          Text(
+                            context.l10n.whyImportant,
+                            style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                              color: Theme.of(context).colorScheme.primary,
+                              fontWeight: FontWeight.w600,
+                            ),
+                          ),
+                          const Spacer(),
+                          Icon(
+                            Icons.info_outline,
+                            color: Theme.of(context).colorScheme.primary,
+                            size: 20,
+                          ),
+                        ],
+                      ),
+                    ),
+                    const SizedBox(height: Shapes.gutterSmall),
+                    Text(
+                      context.l10n.calorieNeedsVaryByAge,
+                      style: Theme.of(context).textTheme.bodySmall,
+                      textAlign: TextAlign.center,
+                    ),
+                    const SizedBox(height: Shapes.gutter),
+                  ],
                 ),
-                const Spacer(),
-                Icon(
-                  Icons.info_outline,
-                  color: Theme.of(context).colorScheme.primary,
-                  size: 20,
-                ),
-              ],
+              ),
             ),
-          ),
-          const SizedBox(height: Shapes.gutterSmall),
-          Text(
-            context.l10n.calorieNeedsVaryByAge,
-            style: Theme.of(context).textTheme.bodySmall,
-            textAlign: TextAlign.center,
-          ),
-          const Spacer(flex: 1),
-        ],
+          );
+        },
       ),
     );
   }
