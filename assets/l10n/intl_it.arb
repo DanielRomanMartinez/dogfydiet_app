@@ -394,5 +394,22 @@
   "importantKnowCurrentWeight": "È importante sapere il suo peso attuale per calcolare la sua razione ideale.",
   "knowPuppyWeightFundamental": "Conoscere il peso del tuo cucciolo è fondamentale per adattare il piano alimentare alla sua fase di sviluppo.",
   "back": "Indietro",
-  "continueButton": "Continua"
+  "continueButton": "Continua",
+  "useCurrentLocation": "Usa posizione attuale",
+  "detectingLocation": "Rilevamento posizione...",
+  "locationPermissionRequired": "Permesso di localizzazione richiesto",
+  "locationPermissionDenied": "Permesso di localizzazione negato",
+  "locationPermissionPermanentlyDenied": "Permesso di localizzazione negato permanentemente",
+  "enableLocationInSettings": "Si prega di abilitare l'accesso alla posizione nelle impostazioni",
+  "locationServiceDisabled": "Il servizio di localizzazione è disabilitato",
+  "enableLocationService": "Si prega di abilitare il servizio di localizzazione",
+  "locationDetectionFailed": "Rilevamento posizione fallito",
+  "tryAgain": "Riprova",
+  "openSettings": "Apri impostazioni",
+  "allowLocationAccess": "Consenti l'accesso alla posizione per compilare automaticamente il tuo indirizzo",
+  "locationDetected": "Posizione rilevata con successo",
+  "unableToGetAddress": "Impossibile ottenere l'indirizzo dalla posizione",
+  "checkInternetConnection": "Si prega di verificare la connessione internet",
+  "purchaseSuccess": "Acquisto completato correttamente",
+  "purchaseSuccessMessage": "Il tuo acquisto è stato elaborato con successo. Benvenuto in Dogfy Diet!"
 }

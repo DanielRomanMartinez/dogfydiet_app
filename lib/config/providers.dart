@@ -1,4 +1,6 @@
 import 'package:dogfydiet_app/domain/repositories/language_repository.dart';
+import 'package:dogfydiet_app/domain/services/core/geo_location_service.dart';
+import 'package:dogfydiet_app/domain/services/core/permissions_service.dart';
 import 'package:dogfydiet_app/domain/services/core/router_service.dart';
 import 'package:dogfydiet_app/domain/services/core/start_up_service.dart';
 import 'package:dogfydiet_app/domain/services/core/system_preferences_service.dart';
@@ -6,6 +8,8 @@ import 'package:dogfydiet_app/domain/services/dog_breed_service.dart';
 import 'package:dogfydiet_app/domain/services/order_service.dart';
 import 'package:dogfydiet_app/domain/services/subscription_service.dart';
 import 'package:dogfydiet_app/infraestructure/repositories/language_repository.dart';
+import 'package:dogfydiet_app/infraestructure/services/core/geo_location_service.dart';
+import 'package:dogfydiet_app/infraestructure/services/core/permissions_service.dart';
 import 'package:dogfydiet_app/infraestructure/services/core/system_preferences_service.dart';
 import 'package:dogfydiet_app/infraestructure/services/dog_breed_service.dart';
 import 'package:dogfydiet_app/infraestructure/services/order_service.dart';
@@ -44,6 +48,16 @@ DogBreedService dogBreedService(Ref ref) {
 @riverpod
 SubscriptionService subscriptionService(Ref ref) {
   return SubscriptionServiceImpl();
+}
+
+@riverpod
+PermissionService permissionService(Ref ref) {
+  return PermissionServiceImpl();
+}
+
+@riverpod
+GeolocationService geolocationService(Ref ref) {
+  return GeolocationServiceImpl();
 }
 
 @riverpod

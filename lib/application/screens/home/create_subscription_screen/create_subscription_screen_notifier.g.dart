@@ -7,7 +7,7 @@ part of 'create_subscription_screen_notifier.dart';
 // **************************************************************************
 
 String _$createSubscriptionScreenNotifierHash() =>
-    r'6b4a9a0a3af2960d7a9e1dae2e2828fb3189ffd6';
+    r'c062006ec1d6b0a7d16d11cdb93a4757dd0e1af1';
 
 /// See also [CreateSubscriptionScreenNotifier].
 @ProviderFor(CreateSubscriptionScreenNotifier)

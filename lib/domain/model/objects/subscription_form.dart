@@ -212,7 +212,7 @@ class SubscriptionForm extends Equatable {
       case stepActivityLevel:
         return activityLevel != null;
       case stepHealthConditions:
-        return true; // Health conditions are optional
+        return true;
       case stepFoodPreferences:
         return foodPreferences != null;
       case stepOwnerDetails:

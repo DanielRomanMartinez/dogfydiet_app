@@ -740,4 +740,64 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get continueButton => 'Continua';
+
+  @override
+  String get useCurrentLocation => 'Usa posizione attuale';
+
+  @override
+  String get detectingLocation => 'Rilevamento posizione...';
+
+  @override
+  String get locationPermissionRequired =>
+      'Permesso di localizzazione richiesto';
+
+  @override
+  String get locationPermissionDenied => 'Permesso di localizzazione negato';
+
+  @override
+  String get locationPermissionPermanentlyDenied =>
+      'Permesso di localizzazione negato permanentemente';
+
+  @override
+  String get enableLocationInSettings =>
+      'Si prega di abilitare l\'accesso alla posizione nelle impostazioni';
+
+  @override
+  String get locationServiceDisabled =>
+      'Il servizio di localizzazione è disabilitato';
+
+  @override
+  String get enableLocationService =>
+      'Si prega di abilitare il servizio di localizzazione';
+
+  @override
+  String get locationDetectionFailed => 'Rilevamento posizione fallito';
+
+  @override
+  String get tryAgain => 'Riprova';
+
+  @override
+  String get openSettings => 'Apri impostazioni';
+
+  @override
+  String get allowLocationAccess =>
+      'Consenti l\'accesso alla posizione per compilare automaticamente il tuo indirizzo';
+
+  @override
+  String get locationDetected => 'Posizione rilevata con successo';
+
+  @override
+  String get unableToGetAddress =>
+      'Impossibile ottenere l\'indirizzo dalla posizione';
+
+  @override
+  String get checkInternetConnection =>
+      'Si prega di verificare la connessione internet';
+
+  @override
+  String get purchaseSuccess => 'Acquisto completato correttamente';
+
+  @override
+  String get purchaseSuccessMessage =>
+      'Il tuo acquisto è stato elaborato con successo. Benvenuto in Dogfy Diet!';
 }

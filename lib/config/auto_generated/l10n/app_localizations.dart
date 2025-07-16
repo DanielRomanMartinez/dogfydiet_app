@@ -1403,6 +1403,108 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Continue'**
   String get continueButton;
+
+  /// No description provided for @useCurrentLocation.
+  ///
+  /// In en, this message translates to:
+  /// **'Use current location'**
+  String get useCurrentLocation;
+
+  /// No description provided for @detectingLocation.
+  ///
+  /// In en, this message translates to:
+  /// **'Detecting location...'**
+  String get detectingLocation;
+
+  /// No description provided for @locationPermissionRequired.
+  ///
+  /// In en, this message translates to:
+  /// **'Location permission required'**
+  String get locationPermissionRequired;
+
+  /// No description provided for @locationPermissionDenied.
+  ///
+  /// In en, this message translates to:
+  /// **'Location permission denied'**
+  String get locationPermissionDenied;
+
+  /// No description provided for @locationPermissionPermanentlyDenied.
+  ///
+  /// In en, this message translates to:
+  /// **'Location permission permanently denied'**
+  String get locationPermissionPermanentlyDenied;
+
+  /// No description provided for @enableLocationInSettings.
+  ///
+  /// In en, this message translates to:
+  /// **'Please enable location access in settings'**
+  String get enableLocationInSettings;
+
+  /// No description provided for @locationServiceDisabled.
+  ///
+  /// In en, this message translates to:
+  /// **'Location service is disabled'**
+  String get locationServiceDisabled;
+
+  /// No description provided for @enableLocationService.
+  ///
+  /// In en, this message translates to:
+  /// **'Please enable location service'**
+  String get enableLocationService;
+
+  /// No description provided for @locationDetectionFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'Failed to detect location'**
+  String get locationDetectionFailed;
+
+  /// No description provided for @tryAgain.
+  ///
+  /// In en, this message translates to:
+  /// **'Try again'**
+  String get tryAgain;
+
+  /// No description provided for @openSettings.
+  ///
+  /// In en, this message translates to:
+  /// **'Open settings'**
+  String get openSettings;
+
+  /// No description provided for @allowLocationAccess.
+  ///
+  /// In en, this message translates to:
+  /// **'Allow location access to automatically fill your address'**
+  String get allowLocationAccess;
+
+  /// No description provided for @locationDetected.
+  ///
+  /// In en, this message translates to:
+  /// **'Location detected successfully'**
+  String get locationDetected;
+
+  /// No description provided for @unableToGetAddress.
+  ///
+  /// In en, this message translates to:
+  /// **'Unable to get address from location'**
+  String get unableToGetAddress;
+
+  /// No description provided for @checkInternetConnection.
+  ///
+  /// In en, this message translates to:
+  /// **'Please check your internet connection'**
+  String get checkInternetConnection;
+
+  /// No description provided for @purchaseSuccess.
+  ///
+  /// In en, this message translates to:
+  /// **'Purchase completed successfully'**
+  String get purchaseSuccess;
+
+  /// No description provided for @purchaseSuccessMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'Your purchase has been processed successfully. Welcome to Dogfy Diet!'**
+  String get purchaseSuccessMessage;
 }
 
 class _AppLocalizationsDelegate

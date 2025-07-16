@@ -114,6 +114,43 @@ final subscriptionServiceProvider =
 @Deprecated('Will be removed in 3.0. Use Ref instead')
 // ignore: unused_element
 typedef SubscriptionServiceRef = AutoDisposeProviderRef<SubscriptionService>;
+String _$permissionServiceHash() => r'a6641cd97a7801cb1d7c3eafbfbaf7c3545e6bec';
+
+/// See also [permissionService].
+@ProviderFor(permissionService)
+final permissionServiceProvider =
+    AutoDisposeProvider<PermissionService>.internal(
+  permissionService,
+  name: r'permissionServiceProvider',
+  debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
+      ? null
+      : _$permissionServiceHash,
+  dependencies: null,
+  allTransitiveDependencies: null,
+);
+
+@Deprecated('Will be removed in 3.0. Use Ref instead')
+// ignore: unused_element
+typedef PermissionServiceRef = AutoDisposeProviderRef<PermissionService>;
+String _$geolocationServiceHash() =>
+    r'6ed45e46e12e975bef7a7ea0402dee1970fdb6c0';
+
+/// See also [geolocationService].
+@ProviderFor(geolocationService)
+final geolocationServiceProvider =
+    AutoDisposeProvider<GeolocationService>.internal(
+  geolocationService,
+  name: r'geolocationServiceProvider',
+  debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
+      ? null
+      : _$geolocationServiceHash,
+  dependencies: null,
+  allTransitiveDependencies: null,
+);
+
+@Deprecated('Will be removed in 3.0. Use Ref instead')
+// ignore: unused_element
+typedef GeolocationServiceRef = AutoDisposeProviderRef<GeolocationService>;
 String _$startUpServiceHash() => r'2d8cf4cfbd9a6b3ea278c2dfe7fa234aecb86f0c';
 
 /// See also [startUpService].
